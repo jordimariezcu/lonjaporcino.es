@@ -7,7 +7,7 @@ export default config({
     ? {
         kind: 'github',
         repo: {
-          owner: 'TU_USUARIO_GITHUB',
+          owner: 'jordimariezcu',
           name: 'lonjaporcino.es',
         },
       }
