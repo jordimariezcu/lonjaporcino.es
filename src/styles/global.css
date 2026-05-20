@@ -260,6 +260,28 @@ tbody td:not(:first-child) {
   padding-bottom: 1px;
 }
 
+/* ── Contexto ──────────────────────────────────── */
+.contexto {
+  border-top: 1px solid var(--border);
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+}
+.contexto h2 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.contexto p {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 0.9rem;
+  max-width: 680px;
+}
+.contexto p:last-child { margin-bottom: 0; }
+
 /* ── Responsive ────────────────────────────────── */
 @media (max-width: 640px) {
   .blog-grid { grid-template-columns: 1fr; }
