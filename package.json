@@ -18,6 +18,9 @@
     "chart.js": "^4.4.6",
     "react-chartjs-2": "^5.2.0"
   },
+  "engines": {
+    "node": ">=20"
+  },
   "devDependencies": {
     "typescript": "^5.7.0",
     "@types/react": "^18.3.12",
