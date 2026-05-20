@@ -1,0 +1,34 @@
+---
+import Base from '../layouts/Base.astro';
+import { createReader } from '@keystatic/core/reader';
+import keystaticConfig from '../../keystatic.config';
+
+const reader = createReader(process.cwd(), keystaticConfig);
+const sobre = await reader.singletons.sobre.read();
+---
+
+<Base title="Sobre" description="Sobre Lonja Porcino — precios del mercado porcino español">
+  <section class="hero">
+    <p class="hero-label">Sobre el sitio</p>
+    <h1>Lonja Porcino</h1>
+  </section>
+
+  <hr class="divider" />
+
+  <div class="sobre-body">
+    {sobre?.descripcion
+      ? sobre.descripcion
+          .split('\n')
+          .map((p: string) => p.trim())
+          .filter(Boolean)
+          .map((p: string) => <p>{p}</p>)
+      : <p>Sitio de publicación de precios del mercado porcino español.</p>
+    }
+
+    {sobre?.email && (
+      <a href={`mailto:${sobre.email}`} class="contact-link">
+        {sobre.email}
+      </a>
+    )}
+  </div>
+</Base>

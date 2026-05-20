@@ -1,0 +1,47 @@
+---
+interface PrecioRow {
+  nombre: string;
+  min: number | null;
+  max: number | null;
+  unidad: string;
+}
+
+interface Props {
+  titulo: string;
+  rows: PrecioRow[];
+}
+
+const { titulo, rows } = Astro.props;
+const filledRows = rows.filter(r => r.min !== null || r.max !== null);
+
+function fmt(val: number | null): string {
+  if (val === null) return '—';
+  return val.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+---
+
+{filledRows.length > 0 && (
+  <div class="price-block">
+    <div class="price-block-header">{titulo}</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Categoría</th>
+          <th>Mín</th>
+          <th>Máx</th>
+          <th>Unidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        {filledRows.map(row => (
+          <tr>
+            <td>{row.nombre}</td>
+            <td class="price-min">{fmt(row.min)}</td>
+            <td class="price-max">{fmt(row.max)}</td>
+            <td class="price-unit">{row.unidad}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}

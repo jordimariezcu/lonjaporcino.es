@@ -1,0 +1,24 @@
+---
+interface Props {
+  slug: string;
+  titulo: string;
+  descripcion: string;
+  fecha: string;
+  tags: string[];
+}
+
+const { slug, titulo, descripcion, fecha, tags } = Astro.props;
+
+function fmtFecha(iso: string): string {
+  if (!iso) return '';
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+}
+---
+
+<a href={`/blog/${slug}`} class="blog-card">
+  <p class="blog-date">{fmtFecha(fecha)}</p>
+  <p class="blog-title">{titulo}</p>
+  {descripcion && <p class="blog-desc">{descripcion}</p>}
+  {tags.length > 0 && <span class="blog-tag">{tags[0]}</span>}
+</a>

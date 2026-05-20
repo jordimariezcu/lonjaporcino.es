@@ -1,0 +1,51 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Inicio',
+  description = 'Precios del mercado porcino español actualizados semanalmente',
+} = Astro.props;
+
+const currentPath = Astro.url.pathname;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} · Lonja Porcino</title>
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo">Lonja<span>Porcino</span></a>
+    <nav class="site-nav">
+      <a href="/" aria-current={currentPath === '/' ? 'page' : undefined}>Inicio</a>
+      <a href="/precios" aria-current={currentPath === '/precios' ? 'page' : undefined}>Precios</a>
+      <a href="/blog" aria-current={currentPath.startsWith('/blog') ? 'page' : undefined}>Blog</a>
+      <a href="/sobre" aria-current={currentPath === '/sobre' ? 'page' : undefined}>Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <p>lonjaporcino.es · Precios orientativos, sin carácter contractual</p>
+    <p>© {new Date().getFullYear()}</p>
+  </footer>
+</body>
+</html>

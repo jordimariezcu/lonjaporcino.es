@@ -1,0 +1,50 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+function fmtFecha(iso: string): string {
+  if (!iso) return '';
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+}
+---
+
+<Base title={post.data.titulo} description={post.data.descripcion ?? ''}>
+  <div class="post-header">
+    <p class="hero-label">{fmtFecha(post.data.fecha ?? '')}</p>
+    <h1 style="font-family: var(--font-serif); font-size: 2rem; line-height: 1.2; margin-bottom: 0.75rem;">
+      {post.data.titulo}
+    </h1>
+    {post.data.descripcion && (
+      <p style="color: var(--muted); font-size: 1rem;">{post.data.descripcion}</p>
+    )}
+    {post.data.tags && post.data.tags.length > 0 && (
+      <div style="margin-top: 0.75rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        {post.data.tags.map((tag: string) => (
+          <span class="blog-tag">{tag}</span>
+        ))}
+      </div>
+    )}
+  </div>
+
+  <hr class="divider" />
+
+  <article class="post-body">
+    <Content />
+  </article>
+</Base>

@@ -1,0 +1,113 @@
+---
+import Base from '../layouts/Base.astro';
+import PreciosTable from '../components/PreciosTable.astro';
+import BlogCard from '../components/BlogCard.astro';
+import { createReader } from '@keystatic/core/reader';
+import keystaticConfig from '../../keystatic.config';
+import { getCollection } from 'astro:content';
+
+const reader = createReader(process.cwd(), keystaticConfig);
+
+const toNum = (v: string | null | undefined): number | null => {
+  if (!v) return null;
+  const n = parseFloat(v);
+  return isNaN(n) ? null : n;
+};
+
+const allSesiones = await reader.collections.sesiones.all();
+const sesion = allSesiones.sort((a, b) => b.slug.localeCompare(a.slug))[0];
+const e = sesion?.entry;
+
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+const posts = allPosts
+  .sort((a, b) => (b.data.fecha ?? '').localeCompare(a.data.fecha ?? ''))
+  .slice(0, 3);
+
+function fmtFecha(iso: string): string {
+  if (!iso) return '';
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+}
+---
+
+<Base title="Inicio">
+  <section class="hero">
+    {sesion
+      ? <p class="hero-label">Última sesión · {fmtFecha(sesion.slug)} · {e?.fuente ?? ''}</p>
+      : <p class="hero-label">Precios del mercado porcino</p>
+    }
+    <h1>Precios del mercado<br />porcino en España</h1>
+    <p class="hero-sub">Cotizaciones actualizadas semanalmente</p>
+  </section>
+
+  <hr class="divider" />
+
+  <div class="container">
+    {sesion ? (
+      <>
+        <p class="section-label">Precios actuales · {fmtFecha(sesion.slug)}</p>
+
+        <PreciosTable
+          titulo="Porcino Blanco — Cebo"
+          rows={[
+            { nombre: 'Cerdo Selecto', min: toNum(e?.blanco_selecto_min), max: toNum(e?.blanco_selecto_max), unidad: '€/kg canal' },
+            { nombre: 'Cerdo Normal',  min: toNum(e?.blanco_normal_min),  max: toNum(e?.blanco_normal_max),  unidad: '€/kg canal' },
+            { nombre: 'Cerdo Graso',   min: toNum(e?.blanco_graso_min),   max: toNum(e?.blanco_graso_max),   unidad: '€/kg canal' },
+          ]}
+        />
+
+        <PreciosTable
+          titulo="Lechones y Cochinillos"
+          rows={[
+            { nombre: 'Lechón Nacional (base 20 kg)',    min: toNum(e?.lechon_nacional_min),    max: toNum(e?.lechon_nacional_max),    unidad: '€/ud' },
+            { nombre: 'Lechón Importación (base 20 kg)', min: toNum(e?.lechon_importacion_min), max: toNum(e?.lechon_importacion_max), unidad: '€/ud' },
+            { nombre: 'Cochinillo con marca',            min: toNum(e?.cochinillo_marca_min),   max: toNum(e?.cochinillo_marca_max),   unidad: '€/kg' },
+            { nombre: 'Cochinillo estándar',             min: toNum(e?.cochinillo_estandar_min),max: toNum(e?.cochinillo_estandar_max),unidad: '€/kg' },
+          ]}
+        />
+
+        <PreciosTable
+          titulo="Porcino Ibérico"
+          rows={[
+            { nombre: 'Bellota 100% pureza racial', min: toNum(e?.bellota_100_min),       max: toNum(e?.bellota_100_max),       unidad: '€/kg vivo' },
+            { nombre: 'Bellota 75%',                min: toNum(e?.bellota_75_min),        max: toNum(e?.bellota_75_max),        unidad: '€/kg vivo' },
+            { nombre: 'Bellota 50%',                min: toNum(e?.bellota_50_min),        max: toNum(e?.bellota_50_max),        unidad: '€/kg vivo' },
+            { nombre: 'Cebo de Campo',              min: toNum(e?.cebo_campo_min),        max: toNum(e?.cebo_campo_max),        unidad: '€/kg vivo' },
+            { nombre: 'Cebo',                       min: toNum(e?.cebo_min),              max: toNum(e?.cebo_max),              unidad: '€/kg vivo' },
+            { nombre: 'Lechones Ibéricos',          min: toNum(e?.lechones_ibericos_min), max: toNum(e?.lechones_ibericos_max), unidad: '€/ud' },
+            { nombre: 'Primales Ibéricos',          min: toNum(e?.primales_ibericos_min), max: toNum(e?.primales_ibericos_max), unidad: '€/kg vivo' },
+          ]}
+        />
+
+        <PreciosTable
+          titulo="Desvieje"
+          rows={[
+            { nombre: 'Cerdas — Única',   min: toNum(e?.cerdas_unica_min),   max: toNum(e?.cerdas_unica_max),   unidad: '€/kg canal' },
+            { nombre: 'Cerdas — Extra',   min: toNum(e?.cerdas_extra_min),   max: toNum(e?.cerdas_extra_max),   unidad: '€/kg canal' },
+            { nombre: 'Cerdas — Desecho', min: toNum(e?.cerdas_desecho_min), max: toNum(e?.cerdas_desecho_max), unidad: '€/kg canal' },
+            { nombre: 'Verracos',         min: toNum(e?.verracos_min),        max: toNum(e?.verracos_max),        unidad: '€/kg canal' },
+          ]}
+        />
+      </>
+    ) : (
+      <p style="color: var(--muted); padding: 2rem 0;">No hay sesiones de precios publicadas todavía.</p>
+    )}
+
+    {posts.length > 0 && (
+      <>
+        <p class="section-label">Últimos análisis</p>
+        <div class="blog-grid">
+          {posts.map(post => (
+            <BlogCard
+              slug={post.slug}
+              titulo={post.data.titulo}
+              descripcion={post.data.descripcion ?? ''}
+              fecha={post.data.fecha ?? ''}
+              tags={post.data.tags ?? []}
+            />
+          ))}
+        </div>
+      </>
+    )}
+  </div>
+</Base>

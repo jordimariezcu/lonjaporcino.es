@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('posts', ({ data }) => !data.draft))
+  .sort((a, b) => (b.data.fecha ?? '').localeCompare(a.data.fecha ?? ''));
+---
+
+<Base title="Blog" description="Análisis y noticias del mercado porcino español">
+  <section class="hero">
+    <p class="hero-label">Artículos</p>
+    <h1>Análisis del<br />mercado porcino</h1>
+  </section>
+
+  <hr class="divider" />
+
+  <div class="container">
+    <p class="section-label">
+      {posts.length} {posts.length === 1 ? 'artículo publicado' : 'artículos publicados'}
+    </p>
+    {posts.length > 0 ? (
+      <div class="blog-grid">
+        {posts.map(post => (
+          <BlogCard
+            slug={post.slug}
+            titulo={post.data.titulo}
+            descripcion={post.data.descripcion ?? ''}
+            fecha={post.data.fecha ?? ''}
+            tags={post.data.tags ?? []}
+          />
+        ))}
+      </div>
+    ) : (
+      <p style="color: var(--muted);">No hay artículos publicados todavía.</p>
+    )}
+  </div>
+</Base>
