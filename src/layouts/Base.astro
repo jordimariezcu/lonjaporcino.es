@@ -4,14 +4,28 @@ import '../styles/global.css';
 interface Props {
   title?: string;
   description?: string;
+  isHome?: boolean;
 }
 
 const {
-  title = 'Inicio',
-  description = 'Precios del mercado porcino español actualizados semanalmente',
+  title,
+  description = 'Cotizaciones semanales del mercado porcino español: porcino blanco, ibérico, lechones y desvieje. Referencia de la Lonja de Binéfar y Lleida.',
+  isHome = false,
 } = Astro.props;
 
+const siteName = 'Lonja Porcino';
+const siteUrl  = 'https://lonjaporcino.es';
+
+const pageTitle = isHome
+  ? `${siteName} — Precios del mercado porcino español`
+  : title
+    ? `${title} · ${siteName}`
+    : siteName;
+
+const canonical = new URL(Astro.url.pathname, siteUrl).href;
 const currentPath = Astro.url.pathname;
+
+const ogImage = `${siteUrl}/og-default.png`;
 ---
 
 <!DOCTYPE html>
@@ -19,9 +33,29 @@ const currentPath = Astro.url.pathname;
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{title} · Lonja Porcino</title>
+
+  <!-- Primary -->
+  <title>{pageTitle}</title>
   <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content={canonical} />
+  <meta property="og:site_name"   content={siteName} />
+  <meta property="og:title"       content={pageTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:locale"      content="es_ES" />
+  <meta property="og:image"       content={ogImage} />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content={pageTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image"       content={ogImage} />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
@@ -32,10 +66,10 @@ const currentPath = Astro.url.pathname;
   <header class="site-header">
     <a href="/" class="logo">Lonja<span>Porcino</span></a>
     <nav class="site-nav">
-      <a href="/" aria-current={currentPath === '/' ? 'page' : undefined}>Inicio</a>
-      <a href="/precios" aria-current={currentPath === '/precios' ? 'page' : undefined}>Precios</a>
-      <a href="/blog" aria-current={currentPath.startsWith('/blog') ? 'page' : undefined}>Blog</a>
-      <a href="/sobre" aria-current={currentPath === '/sobre' ? 'page' : undefined}>Sobre</a>
+      <a href="/"        aria-current={currentPath === '/'                  ? 'page' : undefined}>Inicio</a>
+      <a href="/precios" aria-current={currentPath === '/precios'           ? 'page' : undefined}>Precios</a>
+      <a href="/blog"    aria-current={currentPath.startsWith('/blog')      ? 'page' : undefined}>Blog</a>
+      <a href="/sobre"   aria-current={currentPath === '/sobre'             ? 'page' : undefined}>Sobre</a>
     </nav>
   </header>
 

@@ -30,7 +30,7 @@ function fmtFecha(iso: string): string {
 }
 ---
 
-<Base title="Inicio">
+<Base isHome={true} description="Cotizaciones semanales del mercado porcino español. Porcino blanco, ibérico, lechones y desvieje — referencia de la Lonja de Binéfar y Lleida.">
   <section class="hero">
     {sesion
       ? <p class="hero-label">Última sesión · {fmtFecha(sesion.slug)} · {e?.fuente ?? ''}</p>
