@@ -7,7 +7,7 @@ const posts = (await getCollection('posts', ({ data }) => !data.draft))
   .sort((a, b) => (b.data.fecha ?? '').localeCompare(a.data.fecha ?? ''));
 ---
 
-<Base title="Blog" description="Análisis y noticias del mercado porcino español">
+<Base title="Análisis del mercado porcino" description="Artículos sobre precios del cerdo, cotizaciones semanales, porcino ibérico y tendencias del mercado porcino en España.">
   <section class="hero">
     <p class="hero-label">Artículos</p>
     <h1>Análisis del<br />mercado porcino</h1>

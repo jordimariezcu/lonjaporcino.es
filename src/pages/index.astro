@@ -31,6 +31,22 @@ function fmtFecha(iso: string): string {
 ---
 
 <Base isHome={true} description="Cotizaciones semanales del mercado porcino español. Porcino blanco, ibérico, lechones y desvieje — referencia de la Lonja de Binéfar y Lleida.">
+  <script type="application/ld+json" is:raw>
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Lonja Porcino",
+    "url": "https://lonjaporcino.es",
+    "description": "Cotizaciones semanales del mercado porcino español: porcino blanco, ibérico, lechones y desvieje. Referencia de la Lonja de Lleida y Binéfar.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lonja Porcino",
+      "url": "https://lonjaporcino.es"
+    },
+    "inLanguage": "es"
+  }
+  </script>
+
   <section class="hero">
     {sesion
       ? <p class="hero-label">Última sesión · {fmtFecha(sesion.slug)} · {e?.fuente ?? ''}</p>

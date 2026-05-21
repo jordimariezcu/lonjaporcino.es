@@ -52,7 +52,31 @@ const chartData: SesionChartData[] = sorted.map(s => {
 });
 ---
 
-<Base title="Precios" description="Precios completos del mercado porcino español con histórico">
+<Base
+  title="Precio del cerdo hoy — Cotización semanal"
+  description="Precio del cerdo en España esta semana: porcino blanco (selecto, normal, graso), lechones, cochinillos, ibérico bellota y cebo, y desvieje. Cotizaciones semanales de la Lonja de Lleida y Binéfar."
+>
+  <script type="application/ld+json" is:raw>
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Cotizaciones semanales del mercado porcino español",
+    "description": "Precios del porcino blanco (cerdo selecto, normal y graso), lechones nacionales y de importación, cochinillos, porcino ibérico (bellota 100%, 75%, 50%, cebo de campo y cebo) y desvieje. Sesiones de la Lonja de Lleida y referencia de la Lonja Agropecuaria de Binéfar.",
+    "url": "https://lonjaporcino.es/precios",
+    "keywords": ["precio cerdo", "cotización porcino", "lonja porcino", "precio ibérico bellota", "precio lechón", "desvieje porcino"],
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lonja Porcino",
+      "url": "https://lonjaporcino.es"
+    },
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "España"
+    },
+    "inLanguage": "es"
+  }
+  </script>
+
   <section class="hero">
     <p class="hero-label">Precios del mercado porcino</p>
     <h1>Cotizaciones<br />semanales</h1>
@@ -122,6 +146,23 @@ const chartData: SesionChartData[] = sorted.map(s => {
     ) : (
       <p style="color: var(--muted); padding: 2rem 0;">No hay sesiones publicadas todavía.</p>
     )}
+
+    <div class="contexto" style="margin-top: 2.5rem;">
+      <h2>Cotización semanal del porcino en España</h2>
+      <p>
+        Los precios recogen las principales categorías negociadas en sesión:
+        <strong>porcino blanco de cebo</strong> (cerdo selecto, normal y graso en €/kg canal),
+        <strong>lechones</strong> nacionales y de importación (€/ud, base 20 kg),
+        <strong>cochinillos</strong> con marca y estándar (€/kg),
+        <strong>porcino ibérico</strong> según denominación —bellota 100%, 75% y 50%, cebo de campo y cebo— (€/kg vivo),
+        y <strong>desvieje</strong> —cerdas y verracos— (€/kg canal).
+      </p>
+      <p>
+        Las cotizaciones son orientativas y se publican con periodicidad semanal a partir de las sesiones
+        de la <strong>Lonja de Lleida</strong>, principal referencia nacional del precio del cerdo en España,
+        y de la <strong>Lonja Agropecuaria de Binéfar</strong>.
+      </p>
+    </div>
 
     <p class="section-label">Evolución histórica de precios</p>
     <HistoricoChart sesiones={chartData} client:load />

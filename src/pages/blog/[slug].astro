@@ -25,6 +25,30 @@ function fmtFecha(iso: string): string {
 ---
 
 <Base title={post.data.titulo} description={post.data.descripcion ?? ''}>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.data.titulo,
+    "description": post.data.descripcion ?? '',
+    "datePublished": post.data.fecha ? post.data.fecha + 'T00:00:00+01:00' : undefined,
+    "dateModified": post.data.fecha ? post.data.fecha + 'T00:00:00+01:00' : undefined,
+    "author": {
+      "@type": "Organization",
+      "name": "Lonja Porcino",
+      "url": "https://lonjaporcino.es"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lonja Porcino",
+      "url": "https://lonjaporcino.es"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://lonjaporcino.es/blog/${post.slug}`
+    },
+    "inLanguage": "es"
+  })} />
+
   <div class="post-header">
     <p class="hero-label">{fmtFecha(post.data.fecha ?? '')}</p>
     <h1 style="font-family: var(--font-serif); font-size: 2rem; line-height: 1.2; margin-bottom: 0.75rem;">

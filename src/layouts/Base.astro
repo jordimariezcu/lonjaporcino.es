@@ -5,12 +5,14 @@ interface Props {
   title?: string;
   description?: string;
   isHome?: boolean;
+  noindex?: boolean;
 }
 
 const {
   title,
   description = 'Cotizaciones semanales del mercado porcino español: porcino blanco, ibérico, lechones y desvieje. Referencia de la Lonja de Binéfar y Lleida.',
   isHome = false,
+  noindex = false,
 } = Astro.props;
 
 const siteName = 'Lonja Porcino';
@@ -38,6 +40,7 @@ const ogImage = `${siteUrl}/og-default.png`;
   <title>{pageTitle}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
+  {noindex && <meta name="robots" content="noindex, follow" />}
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
   <!-- Open Graph -->
@@ -55,12 +58,17 @@ const ogImage = `${siteUrl}/og-default.png`;
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image"       content={ogImage} />
 
-  <!-- Fonts -->
+  <!-- Analytics -->
+  <script defer src="https://umami-production-c3fa.up.railway.app/script.js" data-website-id="18126ee9-f090-4c02-a78e-130c5afd43ba"></script>
+
+  <!-- Fonts (non-blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" />
+  </noscript>
 </head>
 <body>
   <header class="site-header">
