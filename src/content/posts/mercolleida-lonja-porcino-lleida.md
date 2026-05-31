@@ -42,13 +42,13 @@ La relación entre ambas referencias no es de dependencia mecánica —los difer
 
 La lonja de Lleida cubre la práctica totalidad de las categorías del mercado porcino español:
 
-**Porcino blanco de cebo**: cerdo selecto, normal y graso, todos en €/kg canal. Es el segmento de mayor volumen y el que concentra la atención de productores e integradores a escala nacional.
+**[Porcino blanco de cebo](/blog/precio-lonja-cerdo-vivo)**: cerdo selecto, normal y graso, todos en €/kg canal. Es el segmento de mayor volumen y el que concentra la atención de productores e integradores a escala nacional.
 
-**Lechones**: nacionales y de importación (base 20 kg), en €/ud. La cotización de Lleida es especialmente relevante aquí porque Cataluña y Aragón concentran la mayor parte de la producción y el tráfico de lechones de la Península.
+**[Lechones](/blog/cotizacion-lechones-lonja)**: nacionales y de importación (base 20 kg), en €/ud. La cotización de Lleida es especialmente relevante aquí porque Cataluña y Aragón concentran la mayor parte de la producción y el tráfico de lechones de la Península.
 
 **Cochinillos**: con marca de garantía y estándar, en €/kg.
 
-**Porcino ibérico**: todas las denominaciones (bellota 100%, 75% y 50%, cebo de campo y cebo), en €/kg vivo. El ibérico cotiza también en Lleida aunque su producción se concentra en el suroeste peninsular, lo que refleja la función de referencia nacional de la lonja.
+**[Porcino ibérico](/blog/precio-porcino-iberico-lonja)**: todas las denominaciones (bellota 100%, 75% y 50%, cebo de campo y cebo), en €/kg vivo. El ibérico cotiza también en Lleida aunque su producción se concentra en el suroeste peninsular, lo que refleja la función de referencia nacional de la lonja.
 
 **Desvieje**: cerdas por categoría (única, extra y desecho) y verracos, en €/kg canal.
 
@@ -60,4 +60,4 @@ Cataluña y Aragón concentran conjuntamente más del 50 % del censo porcino esp
 
 La lonja leridana lleva décadas acumulando autoridad institucional y legitimidad entre los operadores del sector. Esta credibilidad, construida por la participación continuada de las principales organizaciones del sector, es difícil de replicar en el corto plazo por cualquier otra plaza.
 
-Puedes consultar las cotizaciones semanales publicadas en [Lonja Porcino](/precios), actualizadas con las referencias de Mercolleida y la Lonja Agropecuaria de Binéfar.
+Puedes consultar las cotizaciones semanales publicadas en [Lonja Porcino](/precios), actualizadas con las referencias de Mercolleida y la [Lonja Agropecuaria de Binéfar](/blog/lonja-agropecuaria-binefar).

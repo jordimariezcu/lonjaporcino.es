@@ -28,3 +28,13 @@ En la página de [Precios](/precios) encontrarás también la gráfica de evoluc
 ## Cómo mantenerse al día
 
 Los precios se actualizan cada semana. No hay newsletter, no hay suscripción. Solo una URL que consultar: **lonjaporcino.es**.
+
+## Para entender el mercado
+
+Si quieres saber cómo funciona el mercado porcino antes de leer las tablas, tienes algunos artículos de contexto:
+
+- [Cómo se cotiza el precio del cerdo en lonja](/blog/precio-lonja-cerdo-vivo) — kg vivo frente a kg canal, categorías y factores de precio
+- [Cotización de lechones: nacional frente a importación](/blog/cotizacion-lechones-lonja) — la lógica específica del mercado de lechones
+- [Precio del ibérico: bellota, cebo de campo y cebo](/blog/precio-porcino-iberico-lonja) — denominaciones y ciclo de la montanera
+- [Qué es Mercolleida](/blog/mercolleida-lonja-porcino-lleida) — la lonja de referencia del porcino en España
+- [La Lonja Agropecuaria de Binéfar](/blog/lonja-agropecuaria-binefar) — referencia del vacuno y apuesta por el porcino aragonés

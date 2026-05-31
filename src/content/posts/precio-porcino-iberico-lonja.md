@@ -29,7 +29,7 @@ El cerdo ibérico de cebo se cría en instalaciones cerradas, con alimentación 
 
 ## El precio del ibérico se expresa en kg vivo
 
-A diferencia del cerdo blanco, cuyo precio de referencia en lonja es el **€/kg canal**, el ibérico cotiza en **€/kg vivo**. Esta diferencia no es arbitraria: el ibérico se sacrifica con pesos y edades muy distintos según la categoría, y el rendimiento canal puede variar más que en el blanco por el mayor contenido en grasa infiltrada.
+A diferencia del [cerdo blanco](/blog/precio-lonja-cerdo-vivo), cuyo precio de referencia en lonja es el **€/kg canal**, el ibérico cotiza en **€/kg vivo**. Esta diferencia no es arbitraria: el ibérico se sacrifica con pesos y edades muy distintos según la categoría, y el rendimiento canal puede variar más que en el blanco por el mayor contenido en grasa infiltrada.
 
 El factor de conversión vivo-canal del ibérico oscila entre el 75 % y el 80 %, ligeramente inferior al del blanco por la mayor proporción de grasa.
 
@@ -48,8 +48,8 @@ Este ciclo hace que el precio del ibérico bellota tenga una **variabilidad inte
 
 Las lonjas también recogen dos categorías adicionales dentro del ibérico:
 
-**Lechones ibéricos** — se cotizan en €/ud, al igual que el lechón blanco, aunque en rangos de precio sustancialmente superiores por la escasez relativa de reproductores ibéricos de pureza alta. Tienen demanda específica para la producción de cochinillo ibérico y para reposición de cebaderos especializados.
+**Lechones ibéricos** — se cotizan en €/ud, al igual que el [lechón blanco](/blog/cotizacion-lechones-lonja), aunque en rangos de precio sustancialmente superiores por la escasez relativa de reproductores ibéricos de pureza alta. Tienen demanda específica para la producción de cochinillo ibérico y para reposición de cebaderos especializados.
 
 **Primales ibéricos** — animales jóvenes (entre 90 y 130 días) de raza ibérica en fase de recría, previos al período de cebo o montanera. Se cotizan en €/kg vivo y su mercado está concentrado en integradores y ganaderos especializados.
 
-Puedes seguir la evolución semanal de todas las categorías del ibérico en la [página de precios de Lonja Porcino](/precios).
+La cotización del ibérico se establece en sesiones como las de [Mercolleida](/blog/mercolleida-lonja-porcino-lleida) y la [Lonja Agropecuaria de Binéfar](/blog/lonja-agropecuaria-binefar), las dos referencias del porcino en España. Puedes seguir la evolución semanal de todas las categorías en la [página de precios de Lonja Porcino](/precios).

@@ -48,6 +48,6 @@ Esta diversidad de mercados —ganado, materias primas, forrajes— da a la lonj
 
 Aragón es la comunidad autónoma con mayor número de cabezas de porcino de España, superando en censo a Cataluña y concentrando una proporción creciente de la producción nacional. Sin embargo, esta hegemonía productiva no se había traducido históricamente en una presencia equivalente en la formación de precios, que ha permanecido anclada en Lleida.
 
-La Lonja de Binéfar trabaja por cambiar esa situación: construir una **referencia porcina aragonesa** que dote al sector de mayor transparencia en la formación de precios, aportando datos verificables y una representación equilibrada de los productores de la zona. El objetivo no es sustituir a Mercolleida sino complementarla, añadiendo una segunda voz institucional desde la mayor comunidad productora del país.
+La Lonja de Binéfar trabaja por cambiar esa situación: construir una **referencia porcina aragonesa** que dote al sector de mayor transparencia en la formación de precios, aportando datos verificables y una representación equilibrada de los productores de la zona. El objetivo no es sustituir a [Mercolleida](/blog/mercolleida-lonja-porcino-lleida) sino complementarla, añadiendo una segunda voz institucional desde la mayor comunidad productora del país.
 
-Las cotizaciones semanales que publica [Lonja Porcino](/precios) incorporan las referencias de ambas lonjas —Lleida y Binéfar— ofreciendo una visión completa del mercado porcino español.
+Las cotizaciones semanales que publica [Lonja Porcino](/precios) incorporan las referencias de ambas lonjas —[Mercolleida en Lleida](/blog/mercolleida-lonja-porcino-lleida) y Binéfar— ofreciendo una visión completa del [mercado porcino español](/blog/precio-lonja-cerdo-vivo).

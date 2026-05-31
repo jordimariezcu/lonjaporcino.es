@@ -9,7 +9,7 @@ tags:
   - importación
 ---
 
-El mercado de lechones ocupa un lugar propio en las cotizaciones semanales de las lonjas españolas. A diferencia del cerdo de cebo —que se cotiza en euros por kilogramo canal— el lechón se negocia **por unidad (€/ud)** sobre una base de peso estandarizada, normalmente 20 kilogramos. Esta particularidad hace que su cotización tenga una lógica propia y responda a factores distintos a los del cerdo acabado.
+El mercado de lechones ocupa un lugar propio en las cotizaciones semanales de las lonjas españolas. A diferencia del [cerdo de cebo](/blog/precio-lonja-cerdo-vivo) —que se cotiza en euros por kilogramo canal— el lechón se negocia **por unidad (€/ud)** sobre una base de peso estandarizada, normalmente 20 kilogramos. Esta particularidad hace que su cotización tenga una lógica propia y responda a factores distintos a los del cerdo acabado.
 
 ## Qué es la base de peso y por qué importa
 
@@ -19,7 +19,7 @@ Esta convención permite comparar precios entre distintas semanas y procedencias
 
 ## Mercado nacional frente a importación
 
-Las lonjas españolas recogen dos segmentos claramente diferenciados:
+Las lonjas españolas —en especial [Mercolleida](/blog/mercolleida-lonja-porcino-lleida), referencia nacional del porcino— recogen dos segmentos claramente diferenciados:
 
 ### Lechón nacional
 

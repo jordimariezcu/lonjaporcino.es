@@ -16,13 +16,13 @@ Cuando se habla del precio del cerdo en lonja, la primera pregunta que surge es 
 En el mercado porcino español conviven dos unidades de precio según la categoría de animal:
 
 - **€/kg canal**: es la unidad habitual para el porcino blanco de cebo (cerdo selecto, normal y graso) y para el desvieje (cerdas y verracos). El precio canal hace referencia al peso del animal una vez sacrificado y preparado para su comercialización, descontando cabeza, vísceras y extremidades según el protocolo de pesaje.
-- **€/kg vivo**: es la unidad del porcino ibérico —bellota, cebo de campo y cebo— y de los primales ibéricos. El precio se pacta sobre el animal en pie antes de entrar al matadero.
+- **€/kg vivo**: es la unidad del [porcino ibérico](/blog/precio-porcino-iberico-lonja) —bellota, cebo de campo y cebo— y de los primales ibéricos. El precio se pacta sobre el animal en pie antes de entrar al matadero.
 
 La diferencia entre ambas unidades no es trivial. El rendimiento canal del cerdo blanco se sitúa habitualmente entre el 78 % y el 82 % del peso vivo, lo que significa que un animal de 120 kg vivo equivale a unos 95-98 kg canal. Comparar directamente un precio en kg vivo con uno en kg canal sin aplicar este factor lleva a conclusiones erróneas.
 
 ## Cómo se fija el precio del cerdo en lonja
 
-El precio semanal no es resultado de una subasta electrónica ni de un mercado de futuros. Las lonjas españolas funcionan a través de **juntas de precios presenciales**: representantes de productores, integradores y operadores comerciales se reúnen cada semana —típicamente entre martes y jueves— para negociar la dirección y el rango de cotización.
+El precio semanal no es resultado de una subasta electrónica ni de un mercado de futuros. Las lonjas españolas —con [Mercolleida](/blog/mercolleida-lonja-porcino-lleida) como principal referencia nacional— funcionan a través de **juntas de precios presenciales**: representantes de productores, integradores y operadores comerciales se reúnen cada semana —típicamente entre martes y jueves— para negociar la dirección y el rango de cotización.
 
 Los datos que alimentan esa negociación incluyen:
 
