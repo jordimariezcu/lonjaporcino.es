@@ -9,10 +9,10 @@ export const GET: APIRoute = async () => {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
 
   const staticUrls = [
-    { loc: `${SITE}/`,       changefreq: 'weekly',  priority: '1.0' },
-    { loc: `${SITE}/precios`, changefreq: 'weekly',  priority: '0.9' },
-    { loc: `${SITE}/blog`,    changefreq: 'weekly',  priority: '0.7' },
-    { loc: `${SITE}/sobre`,   changefreq: 'monthly', priority: '0.3' },
+    { loc: `${SITE}/`,        changefreq: 'weekly', priority: '1.0' },
+    { loc: `${SITE}/precios`, changefreq: 'weekly', priority: '0.9' },
+    { loc: `${SITE}/blog`,    changefreq: 'weekly', priority: '0.7' },
+    // /sobre tiene noindex — no incluir en sitemap para evitar señal contradictoria
   ];
 
   const postUrls = posts.map(post => ({
