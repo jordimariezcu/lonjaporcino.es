@@ -5,6 +5,7 @@ import keystatic from '@keystatic/astro';
 export default defineConfig({
   site: 'https://lonjaporcino.es',
   output: 'hybrid',
+  trailingSlash: 'never',
   adapter: vercel(),
   integrations: [react(), keystatic()],
 });
