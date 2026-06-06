@@ -1,0 +1,207 @@
+name: Nueva sesión de precios
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Uso: GitHub → Actions → "Nueva sesión de precios" → Run workflow
+# Rellena los campos con los precios de la semana y pulsa "Run workflow".
+# El workflow crea el YAML, hace commit y Vercel redeploya automáticamente.
+# ─────────────────────────────────────────────────────────────────────────────
+
+on:
+  workflow_dispatch:
+    inputs:
+      fecha:
+        description: 'Fecha sesión (YYYY-MM-DD)'
+        required: true
+      fuente:
+        description: 'Fuente (ej: Mercolleida)'
+        required: false
+        default: 'Mercolleida'
+      notas:
+        description: 'Notas de mercado (opcional)'
+        required: false
+
+      # Blanco (€/kg canal)
+      blanco_selecto_min: { description: 'Selecto Mín', required: false }
+      blanco_selecto_max: { description: 'Selecto Máx', required: false }
+      blanco_normal_min:  { description: 'Normal Mín',  required: false }
+      blanco_normal_max:  { description: 'Normal Máx',  required: false }
+      blanco_graso_min:   { description: 'Graso Mín',   required: false }
+      blanco_graso_max:   { description: 'Graso Máx',   required: false }
+
+      # Lechones
+      lechon_nacional_min:     { description: 'Lechón Nac Mín (€/ud)', required: false }
+      lechon_nacional_max:     { description: 'Lechón Nac Máx',        required: false }
+      lechon_importacion_min:  { description: 'Lechón Imp Mín (€/ud)', required: false }
+      lechon_importacion_max:  { description: 'Lechón Imp Máx',        required: false }
+      cochinillo_marca_min:    { description: 'Cochinillo c/marca Mín (€/kg)', required: false }
+      cochinillo_marca_max:    { description: 'Cochinillo c/marca Máx',        required: false }
+      cochinillo_estandar_min: { description: 'Cochinillo std Mín (€/kg)',     required: false }
+      cochinillo_estandar_max: { description: 'Cochinillo std Máx',            required: false }
+
+      # Ibérico (€/kg vivo)
+      bellota_100_min:       { description: 'Bellota 100% Mín', required: false }
+      bellota_100_max:       { description: 'Bellota 100% Máx', required: false }
+      bellota_75_min:        { description: 'Bellota 75% Mín',  required: false }
+      bellota_75_max:        { description: 'Bellota 75% Máx',  required: false }
+      bellota_50_min:        { description: 'Bellota 50% Mín',  required: false }
+      bellota_50_max:        { description: 'Bellota 50% Máx',  required: false }
+      cebo_campo_min:        { description: 'Cebo Campo Mín',   required: false }
+      cebo_campo_max:        { description: 'Cebo Campo Máx',   required: false }
+      cebo_min:              { description: 'Cebo Mín',         required: false }
+      cebo_max:              { description: 'Cebo Máx',         required: false }
+      lechones_ibericos_min: { description: 'Lechones Ibér Mín (€/ud)',    required: false }
+      lechones_ibericos_max: { description: 'Lechones Ibér Máx',           required: false }
+      primales_ibericos_min: { description: 'Primales Ibér Mín (€/kg vivo)', required: false }
+      primales_ibericos_max: { description: 'Primales Ibér Máx',             required: false }
+
+      # Desvieje (€/kg canal)
+      cerdas_unica_min:   { description: 'Cerdas Única Mín', required: false }
+      cerdas_unica_max:   { description: 'Cerdas Única Máx', required: false }
+      cerdas_extra_min:   { description: 'Cerdas Extra Mín', required: false }
+      cerdas_extra_max:   { description: 'Cerdas Extra Máx', required: false }
+      cerdas_desecho_min: { description: 'Cerdas Desecho Mín', required: false }
+      cerdas_desecho_max: { description: 'Cerdas Desecho Máx', required: false }
+      verracos_min:       { description: 'Verracos Mín', required: false }
+      verracos_max:       { description: 'Verracos Máx', required: false }
+
+jobs:
+  crear-sesion:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generar YAML y hacer commit
+        env:
+          FECHA:                  ${{ github.event.inputs.fecha }}
+          FUENTE:                 ${{ github.event.inputs.fuente }}
+          NOTAS:                  ${{ github.event.inputs.notas }}
+          BLANCO_SELECTO_MIN:     ${{ github.event.inputs.blanco_selecto_min }}
+          BLANCO_SELECTO_MAX:     ${{ github.event.inputs.blanco_selecto_max }}
+          BLANCO_NORMAL_MIN:      ${{ github.event.inputs.blanco_normal_min }}
+          BLANCO_NORMAL_MAX:      ${{ github.event.inputs.blanco_normal_max }}
+          BLANCO_GRASO_MIN:       ${{ github.event.inputs.blanco_graso_min }}
+          BLANCO_GRASO_MAX:       ${{ github.event.inputs.blanco_graso_max }}
+          LECHON_NACIONAL_MIN:    ${{ github.event.inputs.lechon_nacional_min }}
+          LECHON_NACIONAL_MAX:    ${{ github.event.inputs.lechon_nacional_max }}
+          LECHON_IMPORTACION_MIN: ${{ github.event.inputs.lechon_importacion_min }}
+          LECHON_IMPORTACION_MAX: ${{ github.event.inputs.lechon_importacion_max }}
+          COCHINILLO_MARCA_MIN:   ${{ github.event.inputs.cochinillo_marca_min }}
+          COCHINILLO_MARCA_MAX:   ${{ github.event.inputs.cochinillo_marca_max }}
+          COCHINILLO_ESTANDAR_MIN: ${{ github.event.inputs.cochinillo_estandar_min }}
+          COCHINILLO_ESTANDAR_MAX: ${{ github.event.inputs.cochinillo_estandar_max }}
+          BELLOTA_100_MIN:        ${{ github.event.inputs.bellota_100_min }}
+          BELLOTA_100_MAX:        ${{ github.event.inputs.bellota_100_max }}
+          BELLOTA_75_MIN:         ${{ github.event.inputs.bellota_75_min }}
+          BELLOTA_75_MAX:         ${{ github.event.inputs.bellota_75_max }}
+          BELLOTA_50_MIN:         ${{ github.event.inputs.bellota_50_min }}
+          BELLOTA_50_MAX:         ${{ github.event.inputs.bellota_50_max }}
+          CEBO_CAMPO_MIN:         ${{ github.event.inputs.cebo_campo_min }}
+          CEBO_CAMPO_MAX:         ${{ github.event.inputs.cebo_campo_max }}
+          CEBO_MIN:               ${{ github.event.inputs.cebo_min }}
+          CEBO_MAX:               ${{ github.event.inputs.cebo_max }}
+          LECHONES_IBERICOS_MIN:  ${{ github.event.inputs.lechones_ibericos_min }}
+          LECHONES_IBERICOS_MAX:  ${{ github.event.inputs.lechones_ibericos_max }}
+          PRIMALES_IBERICOS_MIN:  ${{ github.event.inputs.primales_ibericos_min }}
+          PRIMALES_IBERICOS_MAX:  ${{ github.event.inputs.primales_ibericos_max }}
+          CERDAS_UNICA_MIN:       ${{ github.event.inputs.cerdas_unica_min }}
+          CERDAS_UNICA_MAX:       ${{ github.event.inputs.cerdas_unica_max }}
+          CERDAS_EXTRA_MIN:       ${{ github.event.inputs.cerdas_extra_min }}
+          CERDAS_EXTRA_MAX:       ${{ github.event.inputs.cerdas_extra_max }}
+          CERDAS_DESECHO_MIN:     ${{ github.event.inputs.cerdas_desecho_min }}
+          CERDAS_DESECHO_MAX:     ${{ github.event.inputs.cerdas_desecho_max }}
+          VERRACOS_MIN:           ${{ github.event.inputs.verracos_min }}
+          VERRACOS_MAX:           ${{ github.event.inputs.verracos_max }}
+
+        run: |
+          python3 << 'EOF'
+          import os, re, sys
+
+          def v(name):
+              """Leer variable de entorno, devolver string limpio."""
+              return (os.environ.get(name) or '').strip()
+
+          fecha = v('FECHA')
+          if not re.match(r'^\d{4}-\d{2}-\d{2}$', fecha):
+              print(f"Error: fecha inválida '{fecha}'. Debe ser YYYY-MM-DD", file=sys.stderr)
+              sys.exit(1)
+
+          campos = [
+              ('fecha',                  fecha),
+              ('fuente',                 v('FUENTE') or 'Mercolleida'),
+              ('notas',                  v('NOTAS')),
+              ('blanco_selecto_min',     v('BLANCO_SELECTO_MIN')),
+              ('blanco_selecto_max',     v('BLANCO_SELECTO_MAX')),
+              ('blanco_normal_min',      v('BLANCO_NORMAL_MIN')),
+              ('blanco_normal_max',      v('BLANCO_NORMAL_MAX')),
+              ('blanco_graso_min',       v('BLANCO_GRASO_MIN')),
+              ('blanco_graso_max',       v('BLANCO_GRASO_MAX')),
+              ('lechon_nacional_min',    v('LECHON_NACIONAL_MIN')),
+              ('lechon_nacional_max',    v('LECHON_NACIONAL_MAX')),
+              ('lechon_importacion_min', v('LECHON_IMPORTACION_MIN')),
+              ('lechon_importacion_max', v('LECHON_IMPORTACION_MAX')),
+              ('cochinillo_marca_min',   v('COCHINILLO_MARCA_MIN')),
+              ('cochinillo_marca_max',   v('COCHINILLO_MARCA_MAX')),
+              ('cochinillo_estandar_min',v('COCHINILLO_ESTANDAR_MIN')),
+              ('cochinillo_estandar_max',v('COCHINILLO_ESTANDAR_MAX')),
+              ('bellota_100_min',        v('BELLOTA_100_MIN')),
+              ('bellota_100_max',        v('BELLOTA_100_MAX')),
+              ('bellota_75_min',         v('BELLOTA_75_MIN')),
+              ('bellota_75_max',         v('BELLOTA_75_MAX')),
+              ('bellota_50_min',         v('BELLOTA_50_MIN')),
+              ('bellota_50_max',         v('BELLOTA_50_MAX')),
+              ('cebo_campo_min',         v('CEBO_CAMPO_MIN')),
+              ('cebo_campo_max',         v('CEBO_CAMPO_MAX')),
+              ('cebo_min',               v('CEBO_MIN')),
+              ('cebo_max',               v('CEBO_MAX')),
+              ('lechones_ibericos_min',  v('LECHONES_IBERICOS_MIN')),
+              ('lechones_ibericos_max',  v('LECHONES_IBERICOS_MAX')),
+              ('primales_ibericos_min',  v('PRIMALES_IBERICOS_MIN')),
+              ('primales_ibericos_max',  v('PRIMALES_IBERICOS_MAX')),
+              ('cerdas_unica_min',       v('CERDAS_UNICA_MIN')),
+              ('cerdas_unica_max',       v('CERDAS_UNICA_MAX')),
+              ('cerdas_extra_min',       v('CERDAS_EXTRA_MIN')),
+              ('cerdas_extra_max',       v('CERDAS_EXTRA_MAX')),
+              ('cerdas_desecho_min',     v('CERDAS_DESECHO_MIN')),
+              ('cerdas_desecho_max',     v('CERDAS_DESECHO_MAX')),
+              ('verracos_min',           v('VERRACOS_MIN')),
+              ('verracos_max',           v('VERRACOS_MAX')),
+          ]
+
+          TEXTO_LIBRE = {'fecha', 'fuente', 'notas'}
+          lineas = []
+          for campo, valor in campos:
+              if campo in TEXTO_LIBRE:
+                  if not valor:
+                      lineas.append(f"{campo}: ''")
+                  elif any(c in valor for c in ":#[]{}*&!|>'\"%@`"):
+                      import json
+                      lineas.append(f"{campo}: {json.dumps(valor, ensure_ascii=False)}")
+                  else:
+                      lineas.append(f"{campo}: {valor}")
+              else:
+                  lineas.append(f"{campo}: '{valor}'")
+
+          yaml_content = '\n'.join(lineas) + '\n'
+          filepath = f"src/content/sesiones/{fecha}.yaml"
+
+          with open(filepath, 'w', encoding='utf-8') as f:
+              f.write(yaml_content)
+
+          print(f"\nArchivo creado: {filepath}")
+          print("\nContenido:")
+          print(yaml_content)
+          EOF
+
+      - name: Commit y push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "src/content/sesiones/${{ github.event.inputs.fecha }}.yaml"
+          git diff --cached --quiet && echo "Sin cambios" && exit 0
+          git commit -m "datos: sesión ${{ github.event.inputs.fecha }} — ${{ github.event.inputs.fuente }}"
+          git push
+          echo "Commit publicado. Vercel desplegará automáticamente en ~1 minuto."
