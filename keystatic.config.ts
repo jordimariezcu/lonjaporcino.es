@@ -97,7 +97,6 @@ export default config({
         contenido: fields.markdoc({ label: 'Contenido', extension: 'md' }),
       },
     }),
-  },
 
     lonjas: collection({
       label: 'Lonjas porcinas',
