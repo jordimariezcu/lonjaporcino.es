@@ -1,0 +1,153 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const lonjas = await getCollection('lonjas');
+  return lonjas.map(lonja => ({
+    params: { slug: lonja.slug },
+    props: { lonja },
+  }));
+}
+
+interface Props {
+  lonja: CollectionEntry<'lonjas'>;
+}
+
+const { lonja } = Astro.props;
+const { Content } = await lonja.render();
+
+const grupoLabel: Record<string, string> = {
+  A: 'Referencia nacional — blanco y lechones',
+  B: 'Ibérico',
+  C: 'Lonjas catalanas',
+  D: 'Otras lonjas',
+};
+---
+
+<Base title={lonja.data.nombre} description={lonja.data.descripcion}>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": lonja.data.nombre,
+    "description": lonja.data.descripcion,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": lonja.data.municipio,
+      "addressRegion": lonja.data.provincia,
+      "addressCountry": "ES"
+    },
+    "url": `https://lonjaporcino.es/lonjas/${lonja.slug}`,
+    "inLanguage": "es"
+  })} />
+
+  <div class="post-header">
+    <nav class="breadcrumb">
+      <a href="/lonjas">Lonjas</a>
+      <span>›</span>
+      <span>{lonja.data.nombre}</span>
+    </nav>
+    <p class="hero-label">{lonja.data.comunidad}</p>
+    <h1 style="font-family: var(--font-serif); font-size: 2rem; line-height: 1.2; margin-bottom: 0.75rem;">
+      {lonja.data.nombre}
+    </h1>
+    {lonja.data.descripcion && (
+      <p style="color: var(--muted); font-size: 1rem;">{lonja.data.descripcion}</p>
+    )}
+    <div class="lonja-meta">
+      <span class="meta-item">
+        <span class="meta-label">Municipio</span>
+        {lonja.data.municipio}
+      </span>
+      <span class="meta-sep">·</span>
+      <span class="meta-item">
+        <span class="meta-label">Provincia</span>
+        {lonja.data.provincia}
+      </span>
+      <span class="meta-sep">·</span>
+      <span class="meta-item">
+        <span class="meta-label">Grupo</span>
+        {lonja.data.grupo} — {grupoLabel[lonja.data.grupo]}
+      </span>
+    </div>
+    <div class="lonja-especialidad-badge">
+      {lonja.data.especialidad}
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <article class="post-body">
+    <Content />
+  </article>
+
+  <hr class="divider" />
+
+  <div class="lonja-footer">
+    <a href="/lonjas" class="back-link">← Ver todas las lonjas</a>
+    <a href="/precios" class="cta-link">Ver cotizaciones semanales →</a>
+  </div>
+</Base>
+
+<style>
+  .breadcrumb {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+  }
+  .breadcrumb a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  .lonja-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .meta-sep { color: var(--border); }
+  .meta-label {
+    font-weight: 600;
+    color: var(--text);
+    margin-right: 0.25rem;
+  }
+  .lonja-especialidad-badge {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.3rem 0.75rem;
+    background: var(--surface, #f5f5f5);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+  .lonja-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .back-link {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link:hover { color: var(--text); }
+  .cta-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .cta-link:hover { text-decoration: underline; }
+</style>

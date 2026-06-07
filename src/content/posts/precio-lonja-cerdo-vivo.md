@@ -22,7 +22,7 @@ La diferencia entre ambas unidades no es trivial. El rendimiento canal del cerdo
 
 ## Cómo se fija el precio del cerdo en lonja
 
-El precio semanal no es resultado de una subasta electrónica ni de un mercado de futuros. Las lonjas españolas —con [Mercolleida](/blog/mercolleida-lonja-porcino-lleida) como principal referencia nacional— funcionan a través de **juntas de precios presenciales**: representantes de productores, integradores y operadores comerciales se reúnen cada semana —típicamente entre martes y jueves— para negociar la dirección y el rango de cotización.
+El precio semanal no es resultado de una subasta electrónica ni de un mercado de futuros. Las lonjas españolas —con [Mercolleida](/lonjas/mercolleida) como principal referencia nacional— funcionan a través de **juntas de precios presenciales**: representantes de productores, integradores y operadores comerciales se reúnen cada semana —típicamente entre martes y jueves— para negociar la dirección y el rango de cotización.
 
 Los datos que alimentan esa negociación incluyen:
 

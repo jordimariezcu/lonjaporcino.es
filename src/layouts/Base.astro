@@ -76,6 +76,7 @@ const ogImage = `${siteUrl}/og-default.png`;
     <nav class="site-nav">
       <a href="/"        aria-current={currentPath === '/'                  ? 'page' : undefined}>Inicio</a>
       <a href="/precios" aria-current={currentPath === '/precios'           ? 'page' : undefined}>Precios</a>
+      <a href="/lonjas"  aria-current={currentPath.startsWith('/lonjas')    ? 'page' : undefined}>Lonjas</a>
       <a href="/blog"    aria-current={currentPath.startsWith('/blog')      ? 'page' : undefined}>Blog</a>
       <a href="/sobre"   aria-current={currentPath === '/sobre'             ? 'page' : undefined}>Sobre</a>
     </nav>

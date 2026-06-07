@@ -18,6 +18,7 @@ export default config({
     navigation: {
       Precios: ['sesiones'],
       Blog: ['posts'],
+      Lonjas: ['lonjas'],
       Sitio: ['sobre'],
     },
   },
@@ -93,6 +94,34 @@ export default config({
           fields.text({ label: 'Tag' }),
           { label: 'Tags', itemLabel: (props) => props.value }
         ),
+        contenido: fields.markdoc({ label: 'Contenido', extension: 'md' }),
+      },
+    }),
+  },
+
+    lonjas: collection({
+      label: 'Lonjas porcinas',
+      slugField: 'nombre',
+      path: 'src/content/lonjas/*',
+      format: { contentField: 'contenido' },
+      schema: {
+        nombre: fields.slug({ name: { label: 'Nombre de la lonja' } }),
+        descripcion: fields.text({ label: 'Descripción SEO', multiline: true }),
+        grupo: fields.select({
+          label: 'Grupo',
+          options: [
+            { label: 'A — Referencia nacional blanco y lechones', value: 'A' },
+            { label: 'B — Ibérico', value: 'B' },
+            { label: 'C — Lonjas catalanas', value: 'C' },
+            { label: 'D — Otras lonjas', value: 'D' },
+          ],
+          defaultValue: 'A',
+        }),
+        municipio: fields.text({ label: 'Municipio' }),
+        provincia: fields.text({ label: 'Provincia' }),
+        comunidad: fields.text({ label: 'Comunidad autónoma' }),
+        especialidad: fields.text({ label: 'Especialidad principal' }),
+        orden: fields.number({ label: 'Orden (1–30)', defaultValue: 99 }),
         contenido: fields.markdoc({ label: 'Contenido', extension: 'md' }),
       },
     }),

@@ -52,4 +52,4 @@ Las lonjas también recogen dos categorías adicionales dentro del ibérico:
 
 **Primales ibéricos** — animales jóvenes (entre 90 y 130 días) de raza ibérica en fase de recría, previos al período de cebo o montanera. Se cotizan en €/kg vivo y su mercado está concentrado en integradores y ganaderos especializados.
 
-La cotización del ibérico se establece en sesiones como las de [Mercolleida](/blog/mercolleida-lonja-porcino-lleida) y la [Lonja Agropecuaria de Binéfar](/blog/lonja-agropecuaria-binefar), las dos referencias del porcino en España. Puedes seguir la evolución semanal de todas las categorías en la [página de precios de Lonja Porcino](/precios).
+La cotización del ibérico se establece en sesiones como las de [Mercolleida](/lonjas/mercolleida) y la [Lonja Agropecuaria de Binéfar](/lonjas/binefar), las dos referencias del porcino en España. Puedes seguir la evolución semanal de todas las categorías en la [página de precios de Lonja Porcino](/precios).

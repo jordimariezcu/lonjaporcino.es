@@ -19,7 +19,7 @@ Esta convención permite comparar precios entre distintas semanas y procedencias
 
 ## Mercado nacional frente a importación
 
-Las lonjas españolas —en especial [Mercolleida](/blog/mercolleida-lonja-porcino-lleida), referencia nacional del porcino— recogen dos segmentos claramente diferenciados:
+Las lonjas españolas —en especial [Mercolleida](/lonjas/mercolleida), referencia nacional del porcino— recogen dos segmentos claramente diferenciados:
 
 ### Lechón nacional
 

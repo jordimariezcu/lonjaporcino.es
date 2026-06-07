@@ -1,0 +1,115 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const lonjas = await getCollection('lonjas');
+const sorted = lonjas.sort((a, b) => (a.data.orden ?? 99) - (b.data.orden ?? 99));
+
+const grupos = {
+  A: { label: 'Referencia nacional — blanco y lechones', lonjas: sorted.filter(l => l.data.grupo === 'A') },
+  B: { label: 'Ibérico', lonjas: sorted.filter(l => l.data.grupo === 'B') },
+  C: { label: 'Lonjas catalanas', lonjas: sorted.filter(l => l.data.grupo === 'C') },
+  D: { label: 'Otras lonjas con porcino relevante', lonjas: sorted.filter(l => l.data.grupo === 'D') },
+};
+---
+
+<Base
+  title="Las lonjas porcinas de España"
+  description="Directorio de las 30 principales lonjas de porcino en España: Mercolleida, Binéfar, Segovia, Zamora, las lonjas del ibérico y el resto de plazas de referencia."
+>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Lonjas porcinas de España",
+    "description": "Las 30 principales lonjas del mercado porcino español",
+    "url": "https://lonjaporcino.es/lonjas",
+    "numberOfItems": lonjas.length,
+    "itemListElement": sorted.map((l, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": l.data.nombre,
+      "url": `https://lonjaporcino.es/lonjas/${l.slug}`,
+    }))
+  })} />
+
+  <section class="hero">
+    <p class="hero-label">Directorio</p>
+    <h1>Las lonjas porcinas<br />de España</h1>
+    <p class="hero-sub">
+      30 plazas de referencia: desde la cotización nacional de Mercolleida hasta las
+      lonjas del ibérico en Extremadura, Huelva y Salamanca.
+    </p>
+  </section>
+
+  <hr class="divider" />
+
+  <div class="container">
+    {Object.entries(grupos).map(([letra, grupo]) => (
+      <section class="lonja-grupo">
+        <p class="section-label">Grupo {letra} — {grupo.label}</p>
+        <div class="lonja-grid">
+          {grupo.lonjas.map(lonja => (
+            <a href={`/lonjas/${lonja.slug}`} class="lonja-card">
+              <div class="lonja-card-header">
+                <strong>{lonja.data.nombre}</strong>
+                <span class="lonja-lugar">{lonja.data.municipio}, {lonja.data.provincia}</span>
+              </div>
+              <p class="lonja-especialidad">{lonja.data.especialidad}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Base>
+
+<style>
+  .hero-sub {
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 560px;
+    margin-top: 0.75rem;
+  }
+  .lonja-grupo {
+    margin-bottom: 3rem;
+  }
+  .lonja-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .lonja-card {
+    display: block;
+    padding: 1.1rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .lonja-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .lonja-card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin-bottom: 0.5rem;
+  }
+  .lonja-card-header strong {
+    font-size: 1rem;
+    color: var(--text);
+  }
+  .lonja-lugar {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .lonja-especialidad {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 0;
+    line-height: 1.4;
+  }
+</style>

@@ -36,5 +36,5 @@ Si quieres saber cómo funciona el mercado porcino antes de leer las tablas, tie
 - [Cómo se cotiza el precio del cerdo en lonja](/blog/precio-lonja-cerdo-vivo) — kg vivo frente a kg canal, categorías y factores de precio
 - [Cotización de lechones: nacional frente a importación](/blog/cotizacion-lechones-lonja) — la lógica específica del mercado de lechones
 - [Precio del ibérico: bellota, cebo de campo y cebo](/blog/precio-porcino-iberico-lonja) — denominaciones y ciclo de la montanera
-- [Qué es Mercolleida](/blog/mercolleida-lonja-porcino-lleida) — la lonja de referencia del porcino en España
-- [La Lonja Agropecuaria de Binéfar](/blog/lonja-agropecuaria-binefar) — referencia del vacuno y apuesta por el porcino aragonés
+- [Qué es Mercolleida](/lonjas/mercolleida) — la lonja de referencia del porcino en España
+- [La Lonja Agropecuaria de Binéfar](/lonjas/binefar) — referencia del vacuno y apuesta por el porcino aragonés
