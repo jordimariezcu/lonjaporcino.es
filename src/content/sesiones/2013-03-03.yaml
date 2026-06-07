@@ -1,4 +1,4 @@
-fecha: 2013-03-03
+fecha: '2013-03-03'
 fuente: API Comision Europea (CE/UE)
 notas: "Semana 9. Precio CE en EUR/100kg canal convertido. PENDIENTE: lechones, iberico, cochinillos, desvieje."
 blanco_selecto_min: ''

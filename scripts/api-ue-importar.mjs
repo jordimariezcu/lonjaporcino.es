@@ -194,10 +194,15 @@ function generarYAML(fechaSesion, semana, boletin) {
     ['verracos_max',           ''],
   ];
 
-  const TEXTO = new Set(['fecha', 'fuente', 'notas']);
+  // fecha siempre con comillas simples: YAML interpreta 2000-01-09 como Date sin ellas
+  const SIEMPRE_QUOTED = new Set(['fecha']);
+  const TEXTO_LIBRE = new Set(['fuente', 'notas']);
   return campos.map(([campo, valor]) => {
     const v = String(valor ?? '');
-    if (TEXTO.has(campo)) {
+    if (SIEMPRE_QUOTED.has(campo)) {
+      return `${campo}: '${v}'`;
+    }
+    if (TEXTO_LIBRE.has(campo)) {
       if (!v) return `${campo}: ''`;
       if (/[:#\[\]{}&*!|>'"%@`]/.test(v)) return `${campo}: ${JSON.stringify(v)}`;
       return `${campo}: ${v}`;

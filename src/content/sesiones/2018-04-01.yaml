@@ -1,4 +1,4 @@
-fecha: 2018-04-01
+fecha: '2018-04-01'
 fuente: API Comision Europea (CE/UE)
 notas: "Semana 13. Precio CE en EUR/100kg canal convertido. PENDIENTE: lechones, iberico, cochinillos, desvieje."
 blanco_selecto_min: '1.474'

@@ -1,4 +1,4 @@
-fecha: 2006-05-21
+fecha: '2006-05-21'
 fuente: API Comision Europea (CE/UE)
 notas: "Semana 20. Precio CE en EUR/100kg canal convertido. PENDIENTE: lechones, iberico, cochinillos, desvieje."
 blanco_selecto_min: ''
