@@ -230,6 +230,13 @@ tbody td:not(:first-child) {
   padding: 1.5rem;
   margin-bottom: 0.25rem;
 }
+.chart-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
 .chart-select {
   font-family: var(--font-sans);
   font-size: 0.85rem;
@@ -238,8 +245,32 @@ tbody td:not(:first-child) {
   border-radius: 2px;
   background: var(--white);
   color: var(--text);
-  margin-bottom: 1.25rem;
   cursor: pointer;
+}
+.chart-rango {
+  display: flex;
+  gap: 0.25rem;
+  margin-left: auto;
+}
+.rango-btn {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: var(--white);
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.rango-btn:hover {
+  background: var(--bg);
+  color: var(--text);
+}
+.rango-btn.active {
+  background: var(--text);
+  color: var(--white);
+  border-color: var(--text);
 }
 
 /* ── Sobre ─────────────────────────────────────── */

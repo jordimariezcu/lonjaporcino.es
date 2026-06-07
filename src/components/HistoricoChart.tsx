@@ -59,23 +59,39 @@ interface Props {
   sesiones: SesionChartData[];
 }
 
+const RANGOS = [
+  { label: 'Último año',   meses: 12 },
+  { label: '5 años',       meses: 60 },
+  { label: '10 años',      meses: 120 },
+  { label: 'Todo',         meses: 0 },
+];
+
 export function HistoricoChart({ sesiones }: Props) {
-  const [selectedKey, setSelectedKey] = useState<PrecioKey>(CATEGORIAS[0].key);
+  const [selectedKey, setSelectedKey] = useState<PrecioKey>('blanco_normal');
+  const [rango, setRango] = useState(0); // 0 = todo
   const cat = CATEGORIAS.find(c => c.key === selectedKey) ?? CATEGORIAS[0];
 
-  const labels = sesiones.map(s => s.fecha);
-  const dataPoints = sesiones.map(s => s[selectedKey] as number | null);
+  const sesionesRango = rango === 0 ? sesiones : (() => {
+    const limite = new Date();
+    limite.setMonth(limite.getMonth() - rango);
+    const limiteStr = limite.toISOString().split('T')[0];
+    return sesiones.filter(s => s.fecha >= limiteStr);
+  })();
+
+  const labels = sesionesRango.map(s => s.fecha);
+  const dataPoints = sesionesRango.map(s => s[selectedKey] as number | null);
 
   const chartData: ChartData<'line'> = {
     labels,
     datasets: [
       {
         label: cat.label,
-        data: dataPoints,
+        data: dataPoints as (number | null)[],
         borderColor: cat.color,
         backgroundColor: 'transparent',
-        borderWidth: 2,
-        pointRadius: 4,
+        borderWidth: labels.length > 200 ? 1.5 : 2,
+        pointRadius: labels.length > 200 ? 0 : 3,
+        pointHoverRadius: 4,
         pointBackgroundColor: cat.color,
         tension: 0.3,
         spanGaps: true,
@@ -120,15 +136,28 @@ export function HistoricoChart({ sesiones }: Props) {
 
   return (
     <div className="chart-wrapper">
-      <select
-        className="chart-select"
-        value={selectedKey}
-        onChange={(e) => setSelectedKey(e.target.value as PrecioKey)}
-      >
-        {CATEGORIAS.map(c => (
-          <option key={c.key} value={c.key}>{c.label}</option>
-        ))}
-      </select>
+      <div className="chart-controls">
+        <select
+          className="chart-select"
+          value={selectedKey}
+          onChange={(e) => setSelectedKey(e.target.value as PrecioKey)}
+        >
+          {CATEGORIAS.map(c => (
+            <option key={c.key} value={c.key}>{c.label}</option>
+          ))}
+        </select>
+        <div className="chart-rango">
+          {RANGOS.map(r => (
+            <button
+              key={r.meses}
+              className={`rango-btn${rango === r.meses ? ' active' : ''}`}
+              onClick={() => setRango(r.meses)}
+            >
+              {r.label}
+            </button>
+          ))}
+        </div>
+      </div>
       <Line data={chartData} options={options} />
     </div>
   );
