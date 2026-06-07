@@ -26,3 +26,10 @@ Los lechones de Lerma abastecen principalmente granjas de cebo de la propia Cast
 ## Función local y complementaria
 
 La Lonja de Lerma no tiene el alcance nacional de [Mercolleida](/lonjas/mercolleida) ni la especialización de [Segovia](/lonjas/segovia), pero cumple una función esencial para los productores locales: proporciona una referencia de precio verificable y un punto de encuentro entre oferta y demanda en una zona geográfica donde el acceso a la información de mercado puede ser más limitado que en las grandes regiones productoras. Este papel de lonja de proximidad tiene un valor que las grandes referencias nacionales no siempre pueden cubrir.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional del porcino blanco con la que se contrasta el precio local
+- [Lonja de Segovia](/lonjas/segovia) — referencia de lechones de Castilla y León con la que se compara la cotización burgalesa
+- [Lonja de Zamora](/lonjas/zamora) — segunda referencia de lechones de la comunidad
+- [Lonja de León](/lonjas/leon) — cerdo blanco y lechones del noroeste de Castilla y León

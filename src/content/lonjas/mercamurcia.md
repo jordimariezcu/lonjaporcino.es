@@ -26,3 +26,10 @@ El precio del lechón en Murcia es relevante porque la región compite con [Sego
 Mercamurcia no alcanza el peso de referencia nacional de [Mercolleida](/lonjas/mercolleida), pero sus cotizaciones ofrecen una perspectiva valiosa del mercado del sureste, que tiene particularidades propias: mayor influencia de los precios de exportación hacia los países del norte de África y una estructura empresarial más concentrada que genera dinámicas de precio distintas a las del modelo leridano.
 
 Para un productor del sureste, seguir tanto Mercolleida como Mercamurcia permite calibrar si el precio que le ofrecen sus integradores es coherente con las referencias de mercado de la zona.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional que fija el precio base al que se compara el mercado del sureste
+- [Lonja de Segovia](/lonjas/segovia) — uno de los orígenes del lechón nacional que llega al sureste para su cebo
+- [Lonja de Zamora](/lonjas/zamora) — segunda referencia de lechones de Castilla y León con destino al sureste
+- [Lonja de Valencia](/lonjas/valencia) — vecina del corredor mediterráneo sur, con cotizaciones de lechones y cereales

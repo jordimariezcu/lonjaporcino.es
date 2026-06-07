@@ -24,3 +24,9 @@ Las cotizaciones de porcino en la Lonja de Silleda cubren principalmente **cerdo
 ## Semana Verde como termómetro del sector
 
 La Semana Verde de Galicia, que se celebra en Silleda, es uno de los eventos donde el sector porcino —junto con el vacuno y el avícola— tiene mayor visibilidad en el noroeste. Las jornadas técnicas, los concursos de ganado y las presentaciones de maquinaria y tecnología hacen de Silleda un punto de encuentro donde las tendencias del sector se discuten y los contactos comerciales se consolidan. Los precios que se negocian en el contexto de la feria tienen un peso mayor que los de una sesión ordinaria de lonja.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional con la que se comparan los precios del porcino gallego, ajustados por el diferencial de transporte
+- [Lonja de León](/lonjas/leon) — noroeste de Castilla y León, mercado ganadero limítrofe con Galicia
+- [Lonja de Zamora](/lonjas/zamora) — lechones de CyL que abastecen cebaderos de toda la Península, incluyendo Galicia

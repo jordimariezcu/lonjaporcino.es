@@ -40,3 +40,10 @@ Aragón es la comunidad autónoma con mayor número de cabezas de porcino de Esp
 La Lonja de Binéfar trabaja por cambiar esa situación: construir una **referencia porcina aragonesa** que dote al sector de mayor transparencia en la formación de precios. El objetivo no es sustituir a Mercolleida sino complementarla, añadiendo una segunda voz institucional desde la mayor comunidad productora del país.
 
 Sus sesiones porcinas incluyen cotizaciones de cerdo blanco de cebo y lechones. Los precios publicados en [lonjaporcino.es/precios](/precios) incorporan las referencias de ambas lonjas.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional del porcino blanco con la que Binéfar trabaja de forma complementaria
+- [Lonja del Ebro](/lonjas/lonja-ebro) — referencia del corredor del Ebro en Zaragoza, complementaria en el mapa porcino aragonés
+- [Lonja de Caspe](/lonjas/caspe) — tercera referencia del porcino aragonés, en el Bajo Aragón zaragozano y con conexión directa al mercado catalán
+- [Lonja de Teruel](/lonjas/teruel) — vecina al sur, sede del primer jamón con DO de España

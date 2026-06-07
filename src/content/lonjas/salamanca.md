@@ -32,3 +32,10 @@ La Lonja de Salamanca cotiza principalmente:
 Salamanca alberga una industria de jamones y embutidos ibéricos de primer nivel, con empresas que trabajan con materia prima de origen propio y de otras zonas del suroeste. La lonja salmantina alimenta de información a esa industria, proporcionando una referencia de precio que complementa las que publica [Mercolleida](/lonjas/mercolleida) para el ibérico a escala nacional.
 
 La presencia de ferias especializadas como **Salamaq** —uno de los salones agropecuarios más relevantes de España— contribuye a mantener vivo el mercado de animales y a reforzar la función de referencia de precio de la lonja salmantina.
+
+## Lonjas relacionadas
+
+- [Lonja de Extremadura](/lonjas/extremadura) — mayor productor de ibérico bellota de España, referencia del suroeste
+- [Araporc](/lonjas/araporc) — ibérico del sur de Andalucía, la tercera referencia del triángulo junto a Salamanca y Extremadura
+- [Lonja de Los Pedroches](/lonjas/los-pedroches) — DO ibérico de Córdoba, complementaria del ibérico del sur
+- [Lonja de Zamora](/lonjas/zamora) — lechones de CyL en la provincia limítrofe, parte del mismo mapa castellanoleonés

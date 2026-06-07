@@ -30,3 +30,10 @@ La diversidad de productos que cotiza la Lonja de Valencia refleja la vocación 
 **Cereales de pienso**: maíz, cebada y trigo, materias primas fundamentales para el coste de producción porcino.
 
 Esta combinación de cotizaciones hace de la Lonja de Valencia un observatorio completo de los costes e ingresos del productor porcino valenciano, útil tanto para la planificación de explotaciones como para la negociación de contratos de suministro.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — origen principal del porcino que abastece el Levante, referencia del precio en origen
+- [Mercamurcia](/lonjas/mercamurcia) — vecina del corredor mediterráneo sur, referencia del sureste peninsular
+- [Lonja de Tortosa](/lonjas/tortosa) — bisagra entre el sur de Cataluña y el mercado valenciano, al norte por el corredor del Ebro
+- [Lonja del Ebro](/lonjas/lonja-ebro) — producción del interior aragonés que alimenta los mercados del Levante

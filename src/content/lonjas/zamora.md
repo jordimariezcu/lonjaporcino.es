@@ -30,3 +30,10 @@ Además de la producción de lechones, la lonja zamorana recoge también cotizac
 ## El papel de Castilla y León en el mercado porcino
 
 Castilla y León es la tercera comunidad autónoma en censo porcino de España, después de Aragón y Cataluña. Dentro de la comunidad, Zamora y Segovia son las provincias de mayor especialización en lechones, mientras que León, Burgos y Valladolid tienen mayor presencia de cerdo de cebo. Esta diversidad interna explica por qué el mercado castellanoleonés genera varias referencias de precio relevantes a escala nacional.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional que monitoriza y publica los precios de Zamora en su boletín semanal
+- [Lonja de Segovia](/lonjas/segovia) — referencia conjunta de lechones de Castilla y León publicada junto con Zamora por Mercolleida
+- [Lonja de León](/lonjas/leon) — cerdo blanco y lechones del noroeste de la comunidad
+- [Lonja de Salamanca](/lonjas/salamanca) — ibérico y vacuno de vida del suroeste de Castilla y León

@@ -24,3 +24,9 @@ La posición de Talavera como nudo entre Extremadura y Madrid le da una función
 ## Tradición ferial
 
 Talavera tiene una larga tradición ferial que se remonta a la Edad Media, cuando la ciudad era uno de los principales puntos de comercio de la lana castellana. Esa tradición de mercado y feria perdura hoy en la actividad de su lonja ganadera, que sigue siendo un punto de encuentro relevante para los productores del oeste manchego y de las comarcas limítrofes de Extremadura y Castilla y León.
+
+## Lonjas relacionadas
+
+- [Lonja de Toledo](/lonjas/toledo) — capital provincial, referencia del cerdo blanco y cereales del corredor central
+- [Lonja de Ciudad Real](/lonjas/ciudad-real) — La Mancha, complementaria en el mapa porcino manchego
+- [Lonja de Extremadura](/lonjas/extremadura) — puerta de la dehesa ibérica extremeña, al otro lado de la frontera provincial

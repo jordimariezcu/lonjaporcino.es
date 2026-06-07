@@ -22,3 +22,10 @@ La Lonja de Reus cotiza principalmente **cerdo blanco de cebo** en las categorí
 Reus está geográficamente entre el polo porcino de Lleida-Tarragona y el mercado valenciano, dos zonas con dinámicas de precio propias. Los productores de la zona siguen tanto la referencia de Mercolleida como las de lonjas más meridionales para calibrar el precio justo para sus animales.
 
 Esta posición intermedia da a la Lonja de Reus una función de barómetro del mercado que combina las señales del norte catalán con las del corredor mediterráneo sur, siendo una referencia útil para entender cómo se forman los precios en la transición entre las dos grandes zonas porcinas de la costa española.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional del porcino blanco, faro de todo el mercado catalán incluido el del Camp de Tarragona
+- [Lonja de Tortosa](/lonjas/tortosa) — Baix Ebre, corredor del Ebro hacia el sur y el mercado valenciano
+- [Lonja de Bellpuig](/lonjas/bellpuig) — norte de Cataluña (Lleida), complementaria en el eje norte-sur catalán
+- [Mercabarna](/lonjas/mercabarna) — mercado mayorista de consumo de Barcelona, destino de una parte de la producción tarraconense

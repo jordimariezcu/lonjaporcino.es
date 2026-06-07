@@ -24,3 +24,10 @@ Las cotizaciones principales de la Lonja de Tortosa son el **cerdo blanco de ceb
 ## El Delta del Ebro y el entorno ganadero
 
 El Delta del Ebro es conocido principalmente por la producción de arroz y el marisqueo, pero en las comarcas que lo rodean la ganadería porcina tiene una presencia relevante. Las explotaciones de la zona aprovechan los subproductos de la industria arrocera (cascarilla, salvado) como complemento al pienso convencional, lo que da a algunos productores locales un perfil de costes ligeramente diferente al de las grandes explotaciones de alta producción del interior.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia estatal del cerdo blanco, con la que se calibra el precio del sur del corredor catalán
+- [Lonja de Reus](/lonjas/reus) — Camp de Tarragona, vecina al norte y complementaria en el arco sur de Cataluña
+- [Lonja del Ebro](/lonjas/lonja-ebro) — corredor del Ebro en Zaragoza, referencia del interior aragonés con el que Tortosa conecta el delta
+- [Lonja de Valencia](/lonjas/valencia) — Levante, mercado de consumo contiguo al sur del Baix Ebre

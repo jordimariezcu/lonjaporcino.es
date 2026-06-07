@@ -28,3 +28,10 @@ Las cotizaciones de la Lonja de Toledo incluyen:
 ## Integración con el sistema manchego
 
 La Lonja de Toledo completa el cuadro de referencias del porcino manchego junto con [Ciudad Real](/lonjas/ciudad-real), [Albacete](/lonjas/albacete) y [Talavera](/lonjas/talavera). La lectura conjunta de estas cuatro lonjas ofrece una imagen del mercado porcino de Castilla-La Mancha más completa que cualquiera de ellas por separado.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional del porcino blanco, base de las cotizaciones manchegas
+- [Lonja de Ciudad Real](/lonjas/ciudad-real) — La Mancha, vecina al sur con dinámica productiva complementaria
+- [Lonja de Albacete](/lonjas/albacete) — sureste manchego, el otro eje del mapa porcino de Castilla-La Mancha
+- [Lonja de Talavera de la Reina](/lonjas/talavera) — oeste de la provincia, histórico mercado ganadero y puerta a Extremadura

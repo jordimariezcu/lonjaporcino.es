@@ -30,3 +30,10 @@ La lonja de Los Pedroches cotiza con especial atención el **ibérico puro DO**,
 Los Pedroches es una de las cuatro denominaciones de origen del jamón ibérico en España, junto con Guijuelo, Jabugo y Dehesa de Extremadura. Su lonja proporciona una referencia de precio específica para el ibérico de Córdoba, complementando las referencias de [Extremadura](/lonjas/extremadura) y [Salamanca](/lonjas/salamanca) en el mapa del ibérico nacional.
 
 La concentración de producción ibérica de alta calidad en esta comarca del norte cordobés, con clima continental frío en invierno que favorece la curación del jamón, la posiciona como una de las zonas de referencia del mercado ibérico de la mitad sur de España.
+
+## Lonjas relacionadas
+
+- [Lonja de Extremadura](/lonjas/extremadura) — mayor extensión de dehesa ibérica de España, referencia vecina del suroeste
+- [Araporc](/lonjas/araporc) — ibérico de Sevilla, referencia del sur para comparar precios del ibérico andaluz
+- [Mercado de Aracena](/lonjas/aracena) — Jabugo DO (Huelva), precio techo del ibérico puro de bellota en España
+- [Lonja de Salamanca](/lonjas/salamanca) — triángulo ibérico: Pedroches, Extremadura y Salamanca son los tres grandes polos

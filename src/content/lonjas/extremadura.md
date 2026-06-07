@@ -34,3 +34,11 @@ Extremadura cuenta con dos denominaciones de origen de jamón ibérico de primer
 ## La montanera: el período de referencia
 
 El precio del ibérico en Extremadura alcanza su máxima expresión durante y después de la **montanera** (noviembre–febrero), el período en que los cerdos campan en libertad por la dehesa comiendo bellotas. La lonja extremeña es especialmente seguida en estos meses por la industria jamón, que decide entonces sus compras de animales para la producción de las próximas temporadas.
+
+## Lonjas relacionadas
+
+- [Araporc](/lonjas/araporc) — ibérico bellota y cebo del sur de Andalucía, complementaria de la referencia extremeña
+- [Lonja de Salamanca](/lonjas/salamanca) — triángulo ibérico: Extremadura y Salamanca son los dos vértices occidentales
+- [Lonja de Los Pedroches](/lonjas/los-pedroches) — DO ibérico de Córdoba, limítrofe con la dehesa extremeña
+- [Mercado de Aracena](/lonjas/aracena) — Jabugo DO, la referencia del ibérico puro que marca el techo del mercado
+- [Lonja de Talavera de la Reina](/lonjas/talavera) — puerta histórica de Extremadura hacia Madrid, por la ruta de la A-5

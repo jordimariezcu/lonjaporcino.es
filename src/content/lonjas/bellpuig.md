@@ -26,3 +26,10 @@ La referencia de Bellpuig es especialmente útil para los productores que no tie
 ## Integración con el ecosistema porcino leridano
 
 La proximidad geográfica de Bellpuig con [Mercolleida](/lonjas/mercolleida) hace que ambas plazas sean seguidas de forma complementaria por los operadores de la zona. No hay rivalidad entre ellas: Mercolleida opera como referencia estatal, mientras que Bellpuig recoge las particularidades del mercado comarcal. Esta complementariedad enriquece el sistema de información de precios disponible para el sector porcino leridano.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional ubicada en la misma provincia de Lleida, con la que Bellpuig trabaja de forma complementaria
+- [Lonja de Vic](/lonjas/vic) — comarca de Osona, otro polo porcino catalán con industria chacinera propia
+- [Lonja de Girona](/lonjas/girona) — norte de Cataluña, tercera plaza del mapa porcino catalán
+- [Lonja de Reus](/lonjas/reus) — sur de Cataluña, Camp de Tarragona

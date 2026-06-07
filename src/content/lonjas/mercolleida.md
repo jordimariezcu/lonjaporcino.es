@@ -52,3 +52,10 @@ Cataluña y Aragón concentran conjuntamente más del 50% del censo porcino espa
 La lonja leridana lleva décadas acumulando autoridad institucional y legitimidad entre los operadores del sector. Esta credibilidad, construida por la participación continuada de las principales organizaciones del sector, es difícil de replicar en el corto plazo.
 
 Puedes consultar las cotizaciones semanales de Mercolleida actualizadas en la sección de [precios de lonjaporcino.es](/precios).
+
+## Lonjas relacionadas
+
+- [Lonja Agropecuaria de Binéfar](/lonjas/binefar) — segunda voz institucional del porcino aragonés, trabaja para complementar la referencia de Mercolleida desde la comunidad con mayor censo porcino
+- [Lonja de Segovia](/lonjas/segovia) — referencia nacional de lechones y cochinillos que Mercolleida monitoriza y publica semanalmente
+- [Lonja de Zamora](/lonjas/zamora) — segunda referencia de lechones de Castilla y León publicada en el boletín de Mercolleida junto con Segovia
+- [Lonja del Ebro](/lonjas/lonja-ebro) — referencia del corredor del Ebro en Zaragoza, la zona de mayor densidad porcina de España

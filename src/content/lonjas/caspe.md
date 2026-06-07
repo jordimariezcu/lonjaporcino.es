@@ -26,3 +26,10 @@ Las cotizaciones principales son el **cerdo blanco de cebo** en las categorías 
 Aragón tiene el mayor censo porcino de España y múltiples referencias de precio: [Binéfar](/lonjas/binefar) en el norte, la [Lonja del Ebro](/lonjas/lonja-ebro) en el centro y Caspe en el sur. Esta diversidad de referencias enriquece el sistema de información del sector porcino aragonés, permitiendo detectar diferencias regionales de precio que de otro modo pasarían desapercibidas.
 
 La Lonja de Caspe tiene además la particularidad de ser la referencia más cercana a Cataluña del sistema porcino aragonés, lo que le da una conexión directa con las señales de [Mercolleida](/lonjas/mercolleida) y los mataderos del sur de Cataluña que son el principal destino de la producción del Bajo Aragón.
+
+## Lonjas relacionadas
+
+- [Lonja Agropecuaria de Binéfar](/lonjas/binefar) — primera referencia del porcino aragonés (norte de Huesca), complementaria de Caspe
+- [Lonja del Ebro](/lonjas/lonja-ebro) — referencia central del corredor del Ebro en Zaragoza
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional del porcino blanco, a cuyas señales apunta Caspe desde el Bajo Aragón
+- [Lonja de Teruel](/lonjas/teruel) — vecina al sur, DO Jamón de Teruel y producción porcina de la serranía

@@ -30,3 +30,10 @@ Además del porcino, la Lonja del Ebro incluye en sus sesiones cotizaciones de *
 ## Complementariedad con Binéfar
 
 La presencia de dos lonjas relevantes en la provincia de Zaragoza y Huesca (Lonja del Ebro y [Binéfar](/lonjas/binefar)) no genera competencia sino complementariedad: cada una tiene su área de influencia, su composición de participantes y su perfil de información, enriqueciendo el conjunto de referencias disponibles para el sector porcino aragonés.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional del porcino blanco, seguida en paralelo con la Lonja del Ebro por los operadores aragoneses
+- [Lonja Agropecuaria de Binéfar](/lonjas/binefar) — primera referencia del vacuno español y complementaria del porcino de Huesca
+- [Lonja de Caspe](/lonjas/caspe) — porcino del Bajo Aragón, que cierra el triángulo de referencias aragonesas
+- [Lonja de Tortosa](/lonjas/tortosa) — puerta sur del corredor del Ebro, en el delta y la confluencia con el mercado valenciano

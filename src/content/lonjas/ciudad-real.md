@@ -24,3 +24,10 @@ Las cotizaciones principales son el **cerdo blanco de cebo** —en las categorí
 ## Complementariedad con las otras lonjas manchegas
 
 La Lonja de Ciudad Real debe leerse en conjunto con las de [Albacete](/lonjas/albacete), [Toledo](/lonjas/toledo) y [Talavera](/lonjas/talavera) para tener una imagen completa del mercado porcino de Castilla-La Mancha. Cada una de estas plazas refleja las condiciones de su zona de influencia, que pueden diferir en función de la densidad de producción local, la proximidad a los mataderos y las características de la demanda regional.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional del porcino blanco, base de comparación para el mercado manchego
+- [Lonja de Albacete](/lonjas/albacete) — sureste manchego, complementaria en el mapa de Castilla-La Mancha
+- [Lonja de Toledo](/lonjas/toledo) — norte de la región, con cotizaciones de cerdo blanco y cereales de pienso
+- [Lonja de Talavera de la Reina](/lonjas/talavera) — oeste manchego, mercado ganadero histórico con conexión a Extremadura

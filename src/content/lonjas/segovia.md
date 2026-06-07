@@ -30,3 +30,10 @@ La lonja segoviana distingue entre cochinillo **con marca de garantía** —de r
 ## Integración en el sistema nacional de precios
 
 [Mercolleida](/lonjas/mercolleida) publica semanalmente en su boletín oficial los precios de la Lonja de Segovia para lechones y cochinillos, junto con los de [Zamora](/lonjas/zamora), integrándolos así en la referencia nacional. Esta práctica consolida el papel de Segovia como voz autorizada en el segmento de animales jóvenes, complementando la función de la lonja leridana en el cerdo de cebo adulto.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional que monitoriza y publica los precios de Segovia cada semana en su boletín oficial
+- [Lonja de Zamora](/lonjas/zamora) — segunda referencia de lechones de Castilla y León que Mercolleida publica junto con Segovia
+- [Lonja de León](/lonjas/leon) — referencia del cerdo blanco y lechones en el noroeste de Castilla y León
+- [Lonja de Valladolid-Palencia](/lonjas/valladolid) — cereales de pienso y lechones de la Meseta norte

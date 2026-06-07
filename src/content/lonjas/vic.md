@@ -26,3 +26,10 @@ Esta demanda de calidad específica por parte de la industria local da a las cot
 ## Conexión con Mercolleida
 
 Los productores de Osona siguen con atención tanto la Lonja de Vic como [Mercolleida](/lonjas/mercolleida), que actúa como referencia estatal. La doble lectura les permite calibrar si el precio que ofrece la industria local es coherente con la referencia nacional o si hay un diferencial —positivo o negativo— que justifique buscar compradores fuera de la comarca.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional del porcino blanco, contrapunto a la señal local de Osona
+- [Lonja de Bellpuig](/lonjas/bellpuig) — Pla d'Urgell (Lleida), zona de alta producción porcina que complementa la de Osona
+- [Lonja de Girona](/lonjas/girona) — norte de Cataluña, referencia del nordeste catalán
+- [Mercabarna](/lonjas/mercabarna) — mercado mayorista de consumo de Barcelona, destino final de gran parte del porcino de Osona

@@ -26,3 +26,10 @@ León tiene una posición geográfica peculiar: limita con Galicia, Asturias, Ca
 Las cotizaciones principales de la Lonja de León son el **cerdo blanco de cebo** (en €/kg canal) y los **lechones nacionales**. Ambas categorías reflejan la producción local y sirven de referencia para los contratos de compraventa entre productores leoneses y empresas cárnicas de la región y las comunidades limítrofes.
 
 Para una visión completa del mercado porcino de Castilla y León, la referencia de la Lonja de León debe leerse junto con las de [Segovia](/lonjas/segovia), [Zamora](/lonjas/zamora) y [Valladolid](/lonjas/valladolid), que completan el cuadro de precios de la comunidad.
+
+## Lonjas relacionadas
+
+- [Lonja de Segovia](/lonjas/segovia) — referencia de lechones y cochinillos del sur de Castilla y León
+- [Lonja de Zamora](/lonjas/zamora) — lechones del oeste de la comunidad, enviados al arco mediterráneo
+- [Lonja de Lerma](/lonjas/lerma) — porcino de Burgos, mercado ganadero histórico de la Meseta norte
+- [Lonja de Valladolid-Palencia](/lonjas/valladolid) — cereales y lechones del corredor central castellanoleonés

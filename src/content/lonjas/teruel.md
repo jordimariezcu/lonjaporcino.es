@@ -30,3 +30,9 @@ La Lonja de Teruel cotiza principalmente:
 ## Teruel en el contexto porcino aragonés
 
 Aragón es la comunidad con mayor censo porcino de España, pero Teruel es la provincia aragonesa de menor actividad en este sector —la producción se concentra más en Zaragoza y Huesca—. Sin embargo, la singularidad del Jamón de Teruel DO le da a la lonja turolense una identidad diferenciada dentro del panorama porcino aragonés, posicionándola como referencia del nicho del jamón serrano de calidad certificada.
+
+## Lonjas relacionadas
+
+- [Lonja Agropecuaria de Binéfar](/lonjas/binefar) — primera referencia del porcino de Huesca y el norte de Aragón
+- [Lonja del Ebro](/lonjas/lonja-ebro) — referencia central del corredor del Ebro en Zaragoza
+- [Lonja de Caspe](/lonjas/caspe) — Bajo Aragón zaragozano, vecino de Teruel y nexo con el mercado catalán

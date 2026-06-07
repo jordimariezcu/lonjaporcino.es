@@ -32,3 +32,9 @@ La diferencia puede ser sustancial y refleja los costes acumulados de sacrificio
 Las oscilaciones de precio en Mercamadrid anticipan en ocasiones lo que sucederá semanas después en los precios al consumidor final. Cuando la demanda hostelera se activa —puentes, fiestas, eventos gastronómicos—, el precio mayorista en Mercamadrid sube, y ese movimiento acaba trasladándose al precio de caja en los supermercados y carnicerías.
 
 Para el productor porcino, Mercamadrid es una referencia complementaria: le dice cuánto vale su producto al final de la cadena y le permite estimar si el margen que captura es razonable o si la cadena de distribución está absorbiendo una parte desproporcionada del valor generado en la granja.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — precio en origen del productor: el contrapunto de Mercamadrid en la cadena de valor
+- [Lonja de Madrid Porcino](/lonjas/madrid-porcino) — primera distribución mayorista, eslabón entre el precio en origen y el precio al consumo madrileño
+- [Mercabarna](/lonjas/mercabarna) — equivalente mayorista en Barcelona, el otro gran mercado de consumo de España

@@ -24,3 +24,10 @@ Las cotizaciones principales son el **cerdo blanco de cebo** en categorías sele
 ## Una plaza de escala comarcal con conexión europea
 
 La Lonja de Girona cumple la función típica de las lonjas comarcales: proporciona una referencia de precio verificable para productores que de otro modo dependerían exclusivamente de lo que les ofrecen los integradores o comerciantes. Esta función de transparencia tiene un valor especial en una zona de producción relativamente pequeña, donde los productores individuales tienen menos poder de negociación que en las grandes cuencas porcinas de Lleida o Aragón.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional del porcino blanco, la señal estatal a la que se compara el precio gerundense
+- [Lonja de Vic](/lonjas/vic) — Osona, polo porcino de la Cataluña interior con fuerte industria chacinera
+- [Lonja de Bellpuig](/lonjas/bellpuig) — Pla d'Urgell (Lleida), zona de alta producción con la que comparte orientación de mercado
+- [Lonja de Reus](/lonjas/reus) — sur de Cataluña, Camp de Tarragona, referencia del corredor catalán sur

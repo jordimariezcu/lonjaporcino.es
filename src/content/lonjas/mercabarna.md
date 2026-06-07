@@ -30,3 +30,10 @@ El diferencial entre el precio en origen —lo que cobra el ganadero según [Mer
 ## Barcelona como mercado de consumo de primer nivel
 
 El área metropolitana de Barcelona concentra más de 5 millones de habitantes y una de las hostelería más activas de Europa. La demanda de Mercabarna es, por tanto, un factor que puede influir en los precios al consumo de todo el corredor mediterráneo. Cuando la restauración barcelonesa activa la demanda —por eventos, temporada turística o festividades—, el efecto se nota en los precios mayoristas de la sección de porcino de Mercabarna antes de que llegue a los indicadores de precio en origen.
+
+## Lonjas relacionadas
+
+- [Mercamadrid](/lonjas/mercamadrid) — equivalente mayorista al consumo en Madrid, el otro gran mercado de distribución de España
+- [Mercolleida](/lonjas/mercolleida) — precio en origen del porcino blanco que llega a Mercabarna tras recorrer la cadena de distribución
+- [Lonja de Reus](/lonjas/reus) — producción del Camp de Tarragona que abastece parcialmente a Mercabarna
+- [Lonja de Tortosa](/lonjas/tortosa) — producción del sur de Cataluña con acceso al mercado mayorista barcelonés

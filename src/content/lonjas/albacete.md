@@ -24,3 +24,10 @@ La Lonja de Albacete cotiza principalmente **cerdo blanco de cebo** y **lechones
 ## El contexto productivo de Castilla-La Mancha
 
 Castilla-La Mancha no es una de las grandes comunidades porcinas de España —Aragón, Cataluña y Castilla y León tienen censos muy superiores— pero tiene una producción porcina significativa distribuida por sus cinco provincias. Albacete, junto con [Toledo](/lonjas/toledo) y [Ciudad Real](/lonjas/ciudad-real), es una de las referencias del mercado manchego, que abastece principalmente a la industria cárnica del centro y sureste de la Península.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia nacional del porcino blanco, señal que sigue con atención el productor albaceteño
+- [Lonja de Ciudad Real](/lonjas/ciudad-real) — La Mancha, mercado manchego complementario al oeste
+- [Lonja de Toledo](/lonjas/toledo) — norte de Castilla-La Mancha, porcino y cereales del corredor central
+- [Mercamurcia](/lonjas/mercamurcia) — sureste, mercado de destino del porcino albaceteño con influencia en sus cotizaciones

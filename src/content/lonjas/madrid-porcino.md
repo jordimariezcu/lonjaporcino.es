@@ -32,3 +32,10 @@ Este precio es distinto —y generalmente superior— al precio en origen, porqu
 Las condiciones de precio de la Lonja de Madrid tienen influencia sobre el mercado de la Comunidad de Madrid y las provincias limítrofes de Castilla-La Mancha y Castilla y León. La proximidad con la mayor concentración de población y restauración del país hace que la demanda madrileña tenga capacidad de arrastrar hacia arriba los precios cuando la temporada festiva o los eventos gastronómicos activan el consumo.
 
 Para la cotización del productor en origen, la referencia sigue siendo [Mercolleida](/lonjas/mercolleida). Para la distribución mayorista en el mercado de la capital, la Lonja de Madrid Porcino es la plaza que mejor refleja las condiciones reales de compraventa.
+
+## Lonjas relacionadas
+
+- [Mercolleida](/lonjas/mercolleida) — referencia del precio en origen del productor, contrapunto al precio de distribución madrileño
+- [Mercamadrid](/lonjas/mercamadrid) — precio mayorista al consumo en el mismo mercado de Madrid, siguiente eslabón de la cadena
+- [Lonja de Segovia](/lonjas/segovia) — origen de los lechones y cochinillos que abastecen la restauración madrileña
+- [Lonja de Toledo](/lonjas/toledo) — cerdo blanco y cereales del corredor central Madrid-Extremadura

@@ -30,3 +30,10 @@ El **cebo ibérico** —cerdo ibérico engordado en instalaciones con pienso, si
 ## Referencia del sur frente a la del suroeste
 
 Araporc comparte el mercado del ibérico con otras lonjas de la zona suroeste, especialmente [Lonja de Extremadura](/lonjas/extremadura) y [Salamanca](/lonjas/salamanca). La coexistencia de varias referencias es positiva para el mercado: permite comparar señales de precio procedentes de distintas zonas de producción y detectar desajustes o primas regionales que no serían visibles con una sola referencia.
+
+## Lonjas relacionadas
+
+- [Lonja de Extremadura](/lonjas/extremadura) — mayor extensión de dehesa ibérica de España y referencia del ibérico bellota del suroeste
+- [Lonja de Salamanca](/lonjas/salamanca) — tercer vértice del triángulo ibérico, con cotizaciones de bellota y cebo del oeste de Castilla y León
+- [Lonja de Los Pedroches](/lonjas/los-pedroches) — DO ibérico de Córdoba, complementaria del sur de Andalucía
+- [Mercado de Aracena](/lonjas/aracena) — Jabugo DO, precio techo del mercado del ibérico puro de bellota
