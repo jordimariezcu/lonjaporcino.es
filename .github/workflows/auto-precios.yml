@@ -1,32 +1,30 @@
-name: Auto-actualización de precios (Mercolleida)
+name: Auto-actualización de precios (API Comisión Europea)
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Se ejecuta cada viernes a las 20:00 UTC, después de que Mercolleida publique
-# la sesión del jueves. Descarga el boletín PDF, extrae los precios del
-# cerdo blanco y lechón, y crea el YAML de sesión con esos campos ya rellenos.
+# Descarga precios de porcino de España de la API pública gratuita de la
+# Comisión Europea (api.tech.ec.europa.eu/agrifood), sin autenticación.
 #
-# Los campos de ibérico, cochinillos y lechón de importación quedan VACÍOS —
-# hay que completarlos manualmente con el workflow "Nueva sesión de precios"
-# (Actions → Nueva sesión de precios → Run workflow) o editando directamente
-# el archivo en GitHub.
+# Cubre: cerdo blanco clase S (selecto), E (normal), R (graso) en €/kg canal.
+# NO cubre: ibérico, cochinillos, lechones, desvieje — esos quedan vacíos.
+#
+# Se ejecuta cada lunes a las 07:00 UTC (después de que la CE publique
+# los datos de la sesión de la semana anterior).
 #
 # También se puede disparar manualmente: Actions → Auto-actualización → Run workflow
 # ─────────────────────────────────────────────────────────────────────────────
 
 on:
   schedule:
-    - cron: '0 20 * * 5'   # Viernes 20:00 UTC = 22:00 CEST
+    - cron: '0 7 * * 1'   # Lunes 07:00 UTC = 09:00 CEST
   workflow_dispatch:
     inputs:
-      pdf_url:
-        description: 'URL directa al PDF del boletín (dejar vacío = busca en mercolleida.com)'
+      semanas:
+        description: 'Número de semanas a importar (por defecto: 2)'
         required: false
-      fecha_override:
-        description: 'Fecha sesión override YYYY-MM-DD (dejar vacío = auto)'
-        required: false
+        default: '2'
 
 jobs:
-  extraer-y-publicar:
+  actualizar-precios:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -35,173 +33,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Instalar pdfplumber
-        run: pip install pdfplumber --quiet
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
 
-      - name: Extraer precios del boletín Mercolleida
-        id: extraer
+      - name: Importar precios de la API CE
         run: |
-          PDF_URL="${{ github.event.inputs.pdf_url }}"
-          if [ -n "$PDF_URL" ]; then
-            # Descargar desde URL proporcionada manualmente
-            curl -L -A "Mozilla/5.0" -o /tmp/boletin.pdf "$PDF_URL"
-            python scripts/extraer-mercolleida.py /tmp/boletin.pdf > /tmp/precios.json
-          else
-            python scripts/extraer-mercolleida.py > /tmp/precios.json
-          fi
+          SEMANAS="${{ github.event.inputs.semanas || '2' }}"
+          DIAS=$((SEMANAS * 7 + 7))  # +7 para solapamiento seguro
+          DESDE=$(date -d "$DIAS days ago" +%Y-%m-%d)
+          echo "Importando desde: $DESDE"
+          node scripts/api-ue-importar.mjs --desde "$DESDE"
 
-          echo "--- Precios extraídos ---"
-          cat /tmp/precios.json
-
-          # Extraer la fecha para usarla en los siguientes pasos
-          FECHA=$(python -c "import json; d=json.load(open('/tmp/precios.json')); print(d.get('_fecha',''))")
-          if [ -z "$FECHA" ]; then
-            # Fallback: último jueves
-            FECHA=$(python scripts/extraer-mercolleida.py --semana)
-          fi
-
-          OVERRIDE="${{ github.event.inputs.fecha_override }}"
-          if [ -n "$OVERRIDE" ]; then
-            FECHA="$OVERRIDE"
-          fi
-
-          echo "fecha=$FECHA" >> $GITHUB_OUTPUT
-          echo "Fecha de sesión: $FECHA"
-
-      - name: Crear YAML de sesión
+      - name: Commit y push si hay cambios
         run: |
-          FECHA="${{ steps.extraer.outputs.fecha }}"
-          FILE="src/content/sesiones/${FECHA}.yaml"
-
-          if [ -f "$FILE" ]; then
-            echo "El archivo $FILE ya existe. No se sobreescribirá."
-            echo "Para actualizar, usa el workflow 'Nueva sesión de precios' con --forzar."
-            exit 0
-          fi
-
-          python3 << 'PYEOF'
-          import json, os, sys
-
-          fecha = os.environ['FECHA']
-          datos = json.load(open('/tmp/precios.json'))
-          boletin = datos.get('_boletin', '?')
-
-          # Los precios de blanco en el PDF son €/kg VIVO
-          # Mercolleida los llama "precio al productor, €/kg vivo"
-          # Los guardamos tal cual — el campo label en la UI dice canal
-          # pero la fuente real de Mercolleida es vivo; el usuario puede ajustar
-
-          def v(campo):
-              return datos.get(campo, '')
-
-          campos = [
-              ('fecha',                  fecha),
-              ('fuente',                 'Mercolleida'),
-              ('notas',                  f'Auto-extraído del Boletín Mercolleida nº {boletin}. PENDIENTE rellenar: ibérico, cochinillos, lechón importación, desvieje.'),
-              # Blanco (€/kg vivo según Mercolleida)
-              ('blanco_selecto_min',     v('blanco_selecto')),
-              ('blanco_selecto_max',     v('blanco_selecto')),
-              ('blanco_normal_min',      v('blanco_normal')),
-              ('blanco_normal_max',      v('blanco_normal')),
-              ('blanco_graso_min',       v('blanco_graso')),
-              ('blanco_graso_max',       v('blanco_graso')),
-              # Lechones
-              ('lechon_nacional_min',    v('lechon_nacional')),
-              ('lechon_nacional_max',    v('lechon_nacional')),
-              ('lechon_importacion_min', ''),
-              ('lechon_importacion_max', ''),
-              # Cochinillos — completar manualmente
-              ('cochinillo_marca_min',   ''),
-              ('cochinillo_marca_max',   ''),
-              ('cochinillo_estandar_min',''),
-              ('cochinillo_estandar_max',''),
-              # Ibérico — completar manualmente
-              ('bellota_100_min',        ''),
-              ('bellota_100_max',        ''),
-              ('bellota_75_min',         ''),
-              ('bellota_75_max',         ''),
-              ('bellota_50_min',         ''),
-              ('bellota_50_max',         ''),
-              ('cebo_campo_min',         ''),
-              ('cebo_campo_max',         ''),
-              ('cebo_min',               ''),
-              ('cebo_max',               ''),
-              ('lechones_ibericos_min',  ''),
-              ('lechones_ibericos_max',  ''),
-              ('primales_ibericos_min',  ''),
-              ('primales_ibericos_max',  ''),
-              # Desvieje — completar manualmente
-              ('cerdas_unica_min',       ''),
-              ('cerdas_unica_max',       ''),
-              ('cerdas_extra_min',       ''),
-              ('cerdas_extra_max',       ''),
-              ('cerdas_desecho_min',     ''),
-              ('cerdas_desecho_max',     ''),
-              ('verracos_min',           ''),
-              ('verracos_max',           ''),
-          ]
-
-          TEXTO_LIBRE = {'fecha', 'fuente', 'notas'}
-          lineas = []
-          for campo, valor in campos:
-              valor = str(valor).strip()
-              if campo in TEXTO_LIBRE:
-                  if not valor:
-                      lineas.append(f"{campo}: ''")
-                  elif any(c in valor for c in ":#[]{}*&!|>'\"%@`"):
-                      import json as _json
-                      lineas.append(f"{campo}: {_json.dumps(valor, ensure_ascii=False)}")
-                  else:
-                      lineas.append(f"{campo}: {valor}")
-              else:
-                  lineas.append(f"{campo}: '{valor}'")
-
-          content = '\n'.join(lineas) + '\n'
-          filepath = f"src/content/sesiones/{fecha}.yaml"
-
-          with open(filepath, 'w', encoding='utf-8') as f:
-              f.write(content)
-
-          print(f"\nCreado: {filepath}")
-          print("\nContenido:")
-          print(content)
-
-          # Verificar qué campos quedaron vacíos
-          vacios = [c for c, _ in campos if c not in ('fecha','fuente','notas') and not str(datos.get(c.replace('_min','').replace('_max',''), '')).strip()]
-          print(f"\nCampos con dato auto: {sum(1 for c,v in campos if v and c not in ('fecha','fuente','notas'))}")
-          print(f"Campos pendientes de rellenar: muchos — ibérico, cochinillos, desvieje")
-          PYEOF
-        env:
-          FECHA: ${{ steps.extraer.outputs.fecha }}
-
-      - name: Commit y push
-        run: |
-          FECHA="${{ steps.extraer.outputs.fecha }}"
-          FILE="src/content/sesiones/${FECHA}.yaml"
-
-          if [ ! -f "$FILE" ]; then
-            echo "No hay archivo nuevo que commitear (probablemente ya existía)."
-            exit 0
-          fi
-
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "$FILE"
-          git diff --cached --quiet && echo "Sin cambios." && exit 0
-          git commit -m "datos: sesión $FECHA — auto-extraído de Mercolleida (blanco + lechón)"
+          git add src/content/sesiones/
+          git diff --cached --quiet && echo "Sin cambios nuevos." && exit 0
+          FECHA=$(date +%Y-%m-%d)
+          git commit -m "datos: actualización automática API CE — $FECHA (blanco selecto/normal/graso)"
           git push
-
           echo ""
-          echo "════════════════════════════════════════════════════════"
-          echo "✓ Sesión $FECHA creada con precios de cerdo blanco y lechón."
-          echo ""
-          echo "PENDIENTE completar manualmente:"
-          echo "  • Ibérico: bellota 100/75/50, cebo de campo, cebo"
-          echo "  • Lechones ibéricos y primales"
-          echo "  • Cochinillos (con marca y estándar)"
-          echo "  • Lechón importación"
-          echo "  • Desvieje: cerdas (única/extra/desecho) y verracos"
-          echo ""
+          echo "Precios actualizados. Vercel desplegará en ~1 minuto."
+          echo "PENDIENTE rellenar manualmente: ibérico, cochinillos, lechones, desvieje."
           echo "Usa: Actions → Nueva sesión de precios → Run workflow"
-          echo "  con fecha $FECHA para completar los campos vacíos"
-          echo "════════════════════════════════════════════════════════"
