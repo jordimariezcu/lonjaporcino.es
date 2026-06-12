@@ -28,17 +28,38 @@ const grupoLabel: Record<string, string> = {
 <Base title={lonja.data.nombre} description={lonja.data.descripcion}>
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": lonja.data.nombre,
-    "description": lonja.data.descripcion,
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": lonja.data.municipio,
-      "addressRegion": lonja.data.provincia,
-      "addressCountry": "ES"
-    },
-    "url": `https://lonjaporcino.es/lonjas/${lonja.slug}`,
-    "inLanguage": "es"
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": lonja.data.nombre,
+        "description": lonja.data.descripcion,
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": lonja.data.municipio,
+          "addressRegion": lonja.data.provincia,
+          "addressCountry": "ES"
+        },
+        "url": `https://lonjaporcino.es/lonjas/${lonja.slug}`,
+        "inLanguage": "es"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Lonjas",
+            "item": "https://lonjaporcino.es/lonjas"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": lonja.data.nombre,
+            "item": `https://lonjaporcino.es/lonjas/${lonja.slug}`
+          }
+        ]
+      }
+    ]
   })} />
 
   <div class="post-header">

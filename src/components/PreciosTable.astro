@@ -23,6 +23,7 @@ function fmt(val: number | null): string {
 {filledRows.length > 0 && (
   <div class="price-block">
     <div class="price-block-header">{titulo}</div>
+    <div style="overflow-x: auto">
     <table>
       <thead>
         <tr>
@@ -43,5 +44,6 @@ function fmt(val: number | null): string {
         ))}
       </tbody>
     </table>
+    </div>
   </div>
 )}

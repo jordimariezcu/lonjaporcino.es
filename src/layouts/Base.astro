@@ -24,7 +24,7 @@ const pageTitle = isHome
     ? `${title} · ${siteName}`
     : siteName;
 
-const canonical = new URL(Astro.url.pathname, siteUrl).href;
+const canonical = Astro.url.pathname === '/' ? siteUrl : `${siteUrl}${Astro.url.pathname}`;
 const currentPath = Astro.url.pathname;
 
 const ogImage = `${siteUrl}/og-default.png`;
@@ -61,6 +61,31 @@ const ogImage = `${siteUrl}/og-default.png`;
   <!-- Analytics -->
   <script defer src="https://umami-production-c3fa.up.railway.app/script.js" data-website-id="18126ee9-f090-4c02-a78e-130c5afd43ba"></script>
 
+  <!-- Structured data — WebSite + Organization (todas las páginas) -->
+  <script type="application/ld+json" is:raw>
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://lonjaporcino.es/#website",
+        "url": "https://lonjaporcino.es",
+        "name": "Lonja Porcino",
+        "description": "Directorio de lonjas porcinas españolas y cotizaciones semanales del mercado porcino",
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://lonjaporcino.es/#organization",
+        "name": "Lonja Porcino",
+        "url": "https://lonjaporcino.es",
+        "email": "contacto@lonjaporcino.es",
+        "knowsAbout": ["mercado porcino español", "precios del cerdo", "lonjas porcinas", "cotizaciones porcino ibérico"]
+      }
+    ]
+  }
+  </script>
+
   <!-- Fonts (non-blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -73,7 +98,8 @@ const ogImage = `${siteUrl}/og-default.png`;
 <body>
   <header class="site-header">
     <a href="/" class="logo">Lonja<span>Porcino</span></a>
-    <nav class="site-nav">
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">☰</button>
+    <nav class="site-nav" id="site-nav">
       <a href="/"        aria-current={currentPath === '/'                  ? 'page' : undefined}>Inicio</a>
       <a href="/precios" aria-current={currentPath === '/precios'           ? 'page' : undefined}>Precios</a>
       <a href="/lonjas"  aria-current={currentPath.startsWith('/lonjas')    ? 'page' : undefined}>Lonjas</a>
@@ -90,5 +116,15 @@ const ogImage = `${siteUrl}/og-default.png`;
     <p>lonjaporcino.es · Precios orientativos, sin carácter contractual</p>
     <p>© {new Date().getFullYear()}</p>
   </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle') as HTMLButtonElement | null;
+    const nav    = document.getElementById('site-nav');
+    toggle?.addEventListener('click', () => {
+      const open = nav?.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    });
+  </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -55,10 +55,6 @@ const CATEGORIAS: { key: PrecioKey; label: string; color: string }[] = [
   { key: 'verracos',           label: 'Verracos',            color: '#4A4A4A' },
 ];
 
-interface Props {
-  sesiones: SesionChartData[];
-}
-
 const RANGOS = [
   { label: 'Último año',   meses: 12 },
   { label: '5 años',       meses: 60 },
@@ -66,9 +62,38 @@ const RANGOS = [
   { label: 'Todo',         meses: 0 },
 ];
 
-export function HistoricoChart({ sesiones }: Props) {
+export function HistoricoChart() {
+  const [sesiones, setSesiones] = useState<SesionChartData[]>([]);
+  const [loading, setLoading]   = useState(true);
+  const [error, setError]       = useState(false);
   const [selectedKey, setSelectedKey] = useState<PrecioKey>('blanco_normal');
-  const [rango, setRango] = useState(0); // 0 = todo
+  const [rango, setRango]             = useState(0);
+
+  useEffect(() => {
+    fetch('/api/historico.json')
+      .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+      .then((data: SesionChartData[]) => { setSesiones(data); setLoading(false); })
+      .catch(() => { setError(true); setLoading(false); });
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="chart-wrapper" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <p style={{ color: '#6B6B6B', fontSize: '0.85rem' }}>Cargando histórico…</p>
+      </div>
+    );
+  }
+
+  if (error || sesiones.length < 2) {
+    return (
+      <div className="chart-wrapper">
+        <p style={{ color: '#6B6B6B', fontSize: '0.85rem' }}>
+          {error ? 'No se pudo cargar el histórico de precios.' : 'Se necesitan al menos 2 sesiones para mostrar la evolución histórica.'}
+        </p>
+      </div>
+    );
+  }
+
   const cat = CATEGORIAS.find(c => c.key === selectedKey) ?? CATEGORIAS[0];
 
   const sesionesRango = rango === 0 ? sesiones : (() => {
@@ -78,7 +103,7 @@ export function HistoricoChart({ sesiones }: Props) {
     return sesiones.filter(s => s.fecha >= limiteStr);
   })();
 
-  const labels = sesionesRango.map(s => s.fecha);
+  const labels     = sesionesRango.map(s => s.fecha);
   const dataPoints = sesionesRango.map(s => s[selectedKey] as number | null);
 
   const chartData: ChartData<'line'> = {
@@ -123,16 +148,6 @@ export function HistoricoChart({ sesiones }: Props) {
       },
     },
   };
-
-  if (sesiones.length < 2) {
-    return (
-      <div className="chart-wrapper">
-        <p style={{ color: '#6B6B6B', fontSize: '0.85rem' }}>
-          Se necesitan al menos 2 sesiones para mostrar la evolución histórica.
-        </p>
-      </div>
-    );
-  }
 
   return (
     <div className="chart-wrapper">

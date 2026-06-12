@@ -1,0 +1,26 @@
+# Lonja Porcino — lonjaporcino.es
+
+> Directorio de lonjas porcinas españolas y cotizaciones semanales del mercado porcino.
+
+Lonja Porcino publica los precios semanales del cerdo en España: porcino blanco (selecto, normal, graso), lechones nacionales y de importación, cochinillos, porcino ibérico (bellota 100%/75%/50%, cebo de campo, cebo) y desvieje (cerdas y verracos). Incluye histórico de precios desde el año 2000.
+
+## Fuente de datos
+
+Los precios históricos proceden de la API pública de la Comisión Europea (Agrifood Data Portal). Mapeo de clases UE: clase S → cerdo selecto, clase E → cerdo normal, clase R → cerdo graso. Los precios se expresan en €/kg canal (porcino blanco y desvieje) o €/kg vivo (ibérico) o €/unidad (lechones).
+
+## Páginas principales
+
+- /precios — Cotizaciones semanales actuales con histórico interactivo desde 2000
+- /lonjas — Directorio completo de 30 lonjas porcinas españolas
+
+## Lonjas incluidas
+
+Mercolleida (Lleida), Binéfar, Lonja del Ebro (Zaragoza), Caspe, Teruel, Bellpuig, Vic, Girona, Reus, Tortosa, Araporc (Badajoz), Salamanca, Los Pedroches, Aracena, Extremadura, Segovia, Zamora, León, Lerma, Valladolid, Toledo, Ciudad Real, Albacete, Talavera de la Reina, Madrid Porcino, Mercamadrid, Mercabarna, Valencia, Mercamurcia, Semana Verde de Silleda.
+
+## Frecuencia de actualización
+
+Semanal (jueves), datos de la sesión de Mercolleida (Lonja de Lleida) y Lonja Agropecuaria de Binéfar.
+
+## Contacto
+
+contacto@lonjaporcino.es

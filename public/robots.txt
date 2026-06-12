@@ -1,5 +1,28 @@
 User-agent: *
 Allow: /
-Disallow: /keystatic/
+Disallow: /keystatic
+
+# Crawlers de búsqueda IA — permitidos (mejoran visibilidad en AI search)
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Crawlers de entrenamiento — bloqueados (no afectan rankings de búsqueda)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
 
 Sitemap: https://lonjaporcino.es/sitemap.xml
