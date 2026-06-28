@@ -21,9 +21,17 @@ La proximidad de la provincia al mercado francés —con el que Cataluña mantie
 
 Las cotizaciones principales son el **cerdo blanco de cebo** en categorías selecto y normal, y los **lechones nacionales** producidos en las granjas de reproducción de la comarca. Los precios que se forman en Girona son coherentes con los de Mercolleida, con pequeñas variaciones que reflejan las condiciones locales de oferta y demanda.
 
+## El corredor de exportación catalán hacia Francia
+
+La provincia de Girona es la puerta de entrada y salida natural del ganado entre España y Francia. A través de los pasos del Perthus y de Portbou, el tráfico de lechones de importación —procedentes de Francia, Bretaña y Países Bajos— entra hacia las granjas catalanas de cebo. En sentido contrario, carne y ganado español atraviesan la frontera hacia los mataderos del sur de Francia.
+
+Esta posición fronteriza da a los productores gerundenses un acceso directo a los precios del mercado francés, especialmente a los de la región Occitania y Nouvelle-Aquitaine, que publican referencias semanales de porcino blanco con las que se comparan habitualmente las cotizaciones de Girona y [Mercolleida](/lonjas/mercolleida).
+
 ## Una plaza de escala comarcal con conexión europea
 
 La Lonja de Girona cumple la función típica de las lonjas comarcales: proporciona una referencia de precio verificable para productores que de otro modo dependerían exclusivamente de lo que les ofrecen los integradores o comerciantes. Esta función de transparencia tiene un valor especial en una zona de producción relativamente pequeña, donde los productores individuales tienen menos poder de negociación que en las grandes cuencas porcinas de Lleida o Aragón.
+
+El carácter turístico de la Costa Brava y de la ciudad de Girona añade un componente de demanda local que no existe en otras plazas porcinas: la restauración y el comercio local absorben producto fresco de la provincia, lo que crea un mercado de proximidad relevante para los productores gerundenses. Los precios de [lonjaporcino.es/precios](/precios) recogen las referencias semanales publicadas por las lonjas catalanas.
 
 ## Lonjas relacionadas
 
