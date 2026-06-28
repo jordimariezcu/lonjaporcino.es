@@ -23,6 +23,47 @@ const e = sesion?.entry;
   title="Precio del cerdo hoy — Cotización semanal"
   description="Precio del cerdo en España esta semana: porcino blanco (selecto, normal, graso), lechones, cochinillos, ibérico bellota y cebo, y desvieje. Cotizaciones semanales de la Lonja de Lleida y Binéfar."
 >
+  <script type="application/ld+json" is:raw>
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuándo se publica el precio del cerdo en lonja?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los precios del cerdo se publican semanalmente, cada jueves, a partir de las sesiones de la Lonja de Lleida (Mercolleida) y la Lonja Agropecuaria de Binéfar. Lonjaporcino.es actualiza las cotizaciones en cuanto están disponibles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué diferencia hay entre cerdo selecto, normal y graso?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En la lonja porcina española, el cerdo blanco de cebo se clasifica según el porcentaje de magro: el cerdo selecto (categoría S, más del 60% de magro) cotiza más alto; el normal (categoría E, 55-60%) es el de mayor volumen en el mercado; y el graso (categorías R/U/P, menos de 55%) cotiza por debajo. El precio se expresa en €/kg canal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué son los lechones de lonja y cómo se cotizan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los lechones son cerdos jóvenes para recría con un peso base de 20 kg por unidad. En lonja se distingue entre lechón nacional (nacido en España) y lechón de importación (procedente de Francia, Países Bajos o Dinamarca). El precio se expresa en €/unidad."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo se forma el precio del cerdo en España?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El precio del cerdo en España se forma en sesión de lonja, donde productores y compradores negocian los precios de referencia de cada categoría. Mercolleida (Lleida) es la principal referencia nacional. Sus cotizaciones se calculan como media ponderada de las transacciones cerradas en sesión y sirven de base para contratos en toda la cadena de valor porcina."
+        }
+      }
+    ]
+  }
+  </script>
+
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Dataset",
@@ -131,6 +172,22 @@ const e = sesion?.entry;
         de la <strong>Lonja de Lleida</strong>, principal referencia nacional del precio del cerdo en España,
         y de la <strong>Lonja Agropecuaria de Binéfar</strong>.
       </p>
+    </div>
+
+    <div class="contexto faq-block" style="margin-top: 2.5rem;">
+      <h2>Preguntas frecuentes sobre el precio del cerdo</h2>
+
+      <h3>¿Cuándo se publica el precio del cerdo en lonja?</h3>
+      <p>Los precios se publican <strong>semanalmente, cada jueves</strong>, tras las sesiones de la Lonja de Lleida (Mercolleida) y la Lonja Agropecuaria de Binéfar. Lonjaporcino.es actualiza las cotizaciones en cuanto están disponibles.</p>
+
+      <h3>¿Qué diferencia hay entre cerdo selecto, normal y graso?</h3>
+      <p>El cerdo blanco de cebo se clasifica según el porcentaje de magro: el <strong>cerdo selecto</strong> (categoría S, más del 60% de magro) cotiza más alto; el <strong>cerdo normal</strong> (categoría E, 55-60%) es el de mayor volumen en el mercado; y el <strong>cerdo graso</strong> (categorías R/U/P, menos de 55%) cotiza por debajo. El precio se expresa en €/kg canal.</p>
+
+      <h3>¿Qué son los lechones de lonja y cómo se cotizan?</h3>
+      <p>Los lechones son cerdos jóvenes listos para recría, con un <strong>peso base de 20 kg</strong> por unidad. En lonja se distingue entre lechón nacional (nacido en España) y lechón de importación (procedente de Francia, Países Bajos o Dinamarca). El precio se expresa en €/unidad.</p>
+
+      <h3>¿Cómo se forma el precio del cerdo en España?</h3>
+      <p>El precio se forma en sesión de lonja, donde productores y compradores negocian los precios de referencia de cada categoría. <strong>Mercolleida</strong> es la principal referencia nacional: sus cotizaciones se calculan como media ponderada de las transacciones cerradas en sesión y sirven de base para contratos en toda la cadena de valor porcina.</p>
     </div>
 
     <p class="section-label">Evolución histórica de precios</p>

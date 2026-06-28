@@ -41,6 +41,23 @@ La Lonja de Binéfar trabaja por cambiar esa situación: construir una **referen
 
 Sus sesiones porcinas incluyen cotizaciones de cerdo blanco de cebo y lechones. Los precios publicados en [lonjaporcino.es/precios](/precios) incorporan las referencias de ambas lonjas.
 
+## Precios del porcino en Binéfar
+
+Las sesiones de porcino de la Lonja Agropecuaria de Binéfar se publican con periodicidad **semanal**, los jueves. Las categorías cotizadas incluyen:
+
+- **Cerdo blanco de cebo** — selecto, normal y graso, en €/kg canal
+- **Lechones** — nacionales y de importación, en €/unidad con base de peso 20 kg
+
+Los precios de Binéfar se publican consolidados junto con los de Mercolleida en la [página de cotizaciones semanales de lonjaporcino.es](/precios), que incluye además el histórico completo de precios desde el año 2000.
+
+## Posición estratégica en el mapa porcino español
+
+Aragón concentra el mayor censo porcino de España —por delante de Cataluña— con más de 7 millones de cabezas. La mayor parte de esa producción se ceba en granjas de las provincias de Huesca y Zaragoza, dentro del área de influencia directa de Binéfar.
+
+A diferencia de otras lonjas que operan en mercados más locales, Binéfar articula un territorio de producción que abastece mercados nacionales e internacionales. La cadena que va de la granja al matadero, del matadero a la exportación, tiene en el Cinca Medio uno de sus eslabones clave: el matadero de la zona se sitúa entre los de mayor capacidad de la Península en sacrificio de bovino y es también punto de referencia para el porcino procedente de las provincias de Huesca y Lleida.
+
+La proximidad geográfica con [Mercolleida](/lonjas/mercolleida) —a menos de 60 km por la A-2— hace que ambas plazas compartan operadores y que sus precios sirvan de referencia mutua: lo que se cotiza en Binéfar el jueves por la tarde suele confirmar o ajustar ligeramente lo negociado en Lleida esa misma semana.
+
 ## Lonjas relacionadas
 
 - [Mercolleida](/lonjas/mercolleida) — referencia nacional del porcino blanco con la que Binéfar trabaja de forma complementaria
