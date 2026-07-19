@@ -1,6 +1,6 @@
 ---
 nombre: Lonja de Segovia
-descripcion: Referencia nacional de lechones y cochinillos. La lonja segoviana marca el precio del cochinillo de Castilla y León y es seguida semanalmente por Mercolleida.
+descripcion: Precio del lechón y cochinillo en la Lonja de Segovia. Cotizaciones semanales de la referencia nacional de animales jóvenes en Castilla y León. Histórico desde 2000.
 grupo: A
 municipio: Segovia
 provincia: Segovia
@@ -30,6 +30,24 @@ La lonja segoviana distingue entre cochinillo **con marca de garantía** —de r
 ## Integración en el sistema nacional de precios
 
 [Mercolleida](/lonjas/mercolleida) publica semanalmente en su boletín oficial los precios de la Lonja de Segovia para lechones y cochinillos, junto con los de [Zamora](/lonjas/zamora), integrándolos así en la referencia nacional. Esta práctica consolida el papel de Segovia como voz autorizada en el segmento de animales jóvenes, complementando la función de la lonja leridana en el cerdo de cebo adulto.
+
+## Sesiones y cotizaciones semanales
+
+La Lonja de Segovia celebra sus sesiones con periodicidad **semanal**. Los precios resultantes —lechón nacional (base 20 kg), cochinillo con marca y cochinillo estándar— son recogidos y publicados por [Mercolleida](/lonjas/mercolleida) en su boletín oficial de referencia, que constituye la principal fuente de datos para el sector porcino español.
+
+Las cotizaciones de Segovia que aparecen en [lonjaporcino.es/precios](/precios) corresponden a los precios publicados en ese boletín. Las categorías cotizadas son:
+
+- **Lechón nacional** (base 20 kg) en €/unidad
+- **Cochinillo con marca de garantía** en €/kg
+- **Cochinillo estándar** en €/kg
+
+La serie histórica disponible en lonjaporcino.es cubre sesiones desde el año 2000, lo que permite observar la evolución estacional del precio del cochinillo a lo largo de más de dos décadas y comparar los niveles actuales con los de años anteriores.
+
+## Castilla y León y el mapa porcino de animales jóvenes
+
+Castilla y León es la segunda comunidad autónoma española por censo porcino y la primera en producción de lechones para el mercado peninsular. Las granjas de reproducción de las provincias castellanas —con Segovia, Zamora y León como principales referencias— abastecen de lechones las instalaciones de cebo del arco mediterráneo (Cataluña, Aragón, Valencia, Murcia), donde la densidad de cebaderos es mayor pero la producción de lechones, menor.
+
+Esta estructura de mercado —producción de animales jóvenes en el interior castellano, engorde en el litoral mediterráneo— convierte la cotización semanal de Segovia en un indicador adelantado del mercado porcino nacional: el precio del lechón hoy en Segovia anticipa el coste de producción de los cebaderos en las semanas siguientes.
 
 ## Lonjas relacionadas
 

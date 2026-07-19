@@ -25,7 +25,7 @@ const grupoLabel: Record<string, string> = {
 };
 ---
 
-<Base title={lonja.data.nombre} description={lonja.data.descripcion}>
+<Base title={`${lonja.data.nombre} | Precio del cerdo y cotizaciones`} description={lonja.data.descripcion}>
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@graph": [

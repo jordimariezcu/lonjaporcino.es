@@ -1,6 +1,6 @@
 ---
 nombre: Lonja de Bellpuig
-descripcion: Lonja porcina local del Pla d'Urgell (Lleida). Complementa a Mercolleida en la zona de mayor densidad porcina de Cataluña con cotizaciones de cerdo blanco y lechones locales.
+descripcion: Cotizaciones semanales de la Lonja de Bellpuig: precio del cerdo blanco y lechones en el Pla d'Urgell (Lleida). Datos publicados cada jueves. Histórico completo desde 2000.
 grupo: C
 municipio: Bellpuig
 provincia: Lleida
