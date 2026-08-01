@@ -1,6 +1,6 @@
 ---
 nombre: Lonja de Bellpuig
-descripcion: Cotizaciones semanales de la Lonja de Bellpuig: precio del cerdo blanco y lechones en el Pla d'Urgell (Lleida). Datos publicados cada jueves. Histórico completo desde 2000.
+descripcion: "Cotizaciones semanales de la Lonja de Bellpuig: precio del cerdo blanco y lechones en el Pla d'Urgell (Lleida). Datos publicados cada jueves. Histórico completo desde 2000."
 grupo: C
 municipio: Bellpuig
 provincia: Lleida
