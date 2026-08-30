@@ -1,6 +1,6 @@
 ---
 nombre: Lonja de Salamanca
-descripcion: Tercer vértice del triángulo ibérico español. Cotiza ibérico bellota y cebo junto con vacuno de vida en las dehesas de la Salamanca profunda.
+descripcion: Cotizaciones semanales de cerdo ibérico en la Lonja de Salamanca. Precio del ibérico bellota y cebo en las dehesas de Castilla y León. Histórico desde 2000.
 grupo: B
 municipio: Salamanca
 provincia: Salamanca
@@ -32,6 +32,20 @@ La Lonja de Salamanca cotiza principalmente:
 Salamanca alberga una industria de jamones y embutidos ibéricos de primer nivel, con empresas que trabajan con materia prima de origen propio y de otras zonas del suroeste. La lonja salmantina alimenta de información a esa industria, proporcionando una referencia de precio que complementa las que publica [Mercolleida](/lonjas/mercolleida) para el ibérico a escala nacional.
 
 La presencia de ferias especializadas como **Salamaq** —uno de los salones agropecuarios más relevantes de España— contribuye a mantener vivo el mercado de animales y a reforzar la función de referencia de precio de la lonja salmantina.
+
+## Calendario de cotizaciones: bellota y fuera de montanera
+
+La Lonja de Salamanca publica precios del cerdo ibérico con periodicidad semanal a lo largo de todo el año, aunque el mercado tiene una estacionalidad marcada vinculada al ciclo de la **montanera**: el período de engorde con bellota que transcurre entre octubre y febrero, cuando los cerdos ibéricos aprovechan el fruto de encinas y alcornoques en las dehesas.
+
+Durante la montanera, el mercado de **ibérico de bellota** se activa y los precios alcanzan sus máximos anuales, reflejando la prima de calidad que la industria del jamón está dispuesta a pagar por animales que han completado la fase de campo con bellota. El resto del año, la cotización dominante es la del **ibérico de cebo**, que sigue una dinámica más estable y alineada con las referencias de [Extremadura](/lonjas/extremadura) y [Araporc](/lonjas/araporc).
+
+El peso de sacrificio del ibérico salmantino sigue los estándares del sector: entre 150 y 180 kg para el ibérico de bellota, con clasificaciones por pureza racial que determinan si el animal accede a la denominación 100% ibérico o a las categorías de cruce. La serie histórica disponible en esta página recoge las cotizaciones desde el año 2000, permitiendo analizar la evolución del precio del ibérico salmantino a través de varios ciclos de montanera.
+
+## Salamanca en el mapa del ibérico peninsular
+
+La Denominación de Origen **Guijuelo** es la referencia geográfica por excelencia del jamón ibérico salmantino. Guijuelo, a 47 km de la capital provincial, concentra la mayor parte de la industria de curación de la zona y da nombre a un DOP que comparte territorio con cerdos criados tanto en Salamanca como en provincias limítrofes de Extremadura y Portugal.
+
+La Lonja de Salamanca actúa como referencia de precio para todo el ibérico del cuadrante occidental de Castilla y León, complementando la función de [Extremadura](/lonjas/extremadura) en el suroeste y de [Araporc](/lonjas/araporc) en el sur de Andalucía. Los tres mercados están interconectados: cuando el precio del ibérico sube en Extremadura, arrastra al alza la cotización salmantina, y viceversa. La distancia entre las tres plazas no supera los 400 km, lo que hace que el diferencial de transporte sea menor que en el caso del cerdo blanco y que los precios converjan con mayor rapidez ante cambios en la demanda de la industria jamonera.
 
 ## Lonjas relacionadas
 
