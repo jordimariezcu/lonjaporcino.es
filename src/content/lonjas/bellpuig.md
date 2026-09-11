@@ -7,6 +7,15 @@ provincia: Lleida
 comunidad: Cataluña
 especialidad: Cerdo blanco de cebo, lechones locales
 orden: 16
+faqs:
+  - pregunta: "¿Cuándo publica sus cotizaciones la Lonja de Bellpuig?"
+    respuesta: "La Lonja de Bellpuig publica sus cotizaciones cada jueves. Los precios del cerdo blanco de cebo y de los lechones locales quedan fijados en la sesión semanal y están disponibles en lonjaporcino.es el mismo día de la sesión."
+  - pregunta: "¿Qué productos cotiza la Lonja de Bellpuig?"
+    respuesta: "La Lonja de Bellpuig cotiza principalmente cerdo blanco de cebo en sus categorías selecto y normal, y lechones locales producidos en las granjas de reproducción del Pla d'Urgell (Lleida). Es una referencia de proximidad para los productores de la comarca leridana."
+  - pregunta: "¿Cuál es la diferencia entre la Lonja de Bellpuig y Mercolleida?"
+    respuesta: "Mercolleida es la referencia nacional del porcino blanco con proyección estatal, mientras que la Lonja de Bellpuig es una referencia comarcal que recoge las condiciones específicas del mercado local del Pla d'Urgell. Muchos productores de la zona siguen ambas plazas de forma complementaria."
+  - pregunta: "¿Desde cuándo hay datos históricos de la Lonja de Bellpuig en lonjaporcino.es?"
+    respuesta: "lonjaporcino.es dispone del histórico completo de cotizaciones de la Lonja de Bellpuig desde el año 2000, lo que permite comparar el precio actual con más de dos décadas de series semanales del cerdo blanco y los lechones del Pla d'Urgell."
 ---
 
 Bellpuig es una localidad del Pla d'Urgell, una de las comarcas leridanas con mayor densidad porcina de Cataluña. Su lonja es una referencia de proximidad para los productores de la zona que complementa la referencia nacional que ofrece [Mercolleida](/lonjas/mercolleida), también ubicada en la provincia de Lleida.

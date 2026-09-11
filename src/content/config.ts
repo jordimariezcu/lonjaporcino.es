@@ -22,6 +22,10 @@ const lonjas = defineCollection({
     comunidad: z.string(),
     especialidad: z.string(),
     orden: z.number().optional().default(99),
+    faqs: z.array(z.object({
+      pregunta: z.string(),
+      respuesta: z.string(),
+    })).optional(),
   }),
 });
 

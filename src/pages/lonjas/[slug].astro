@@ -58,7 +58,18 @@ const grupoLabel: Record<string, string> = {
             "item": `https://lonjaporcino.es/lonjas/${lonja.slug}`
           }
         ]
-      }
+      },
+      ...(lonja.data.faqs ? [{
+        "@type": "FAQPage",
+        "mainEntity": lonja.data.faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.pregunta,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.respuesta
+          }
+        }))
+      }] : [])
     ]
   })} />
 
